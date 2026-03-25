@@ -1,9 +1,13 @@
 # ⚡ Abhijith
 
 ### Bridging Software ↔ Hardware  
-### FPGA | Verilog | Digital Design | C | Python  
+### Digital Electronics | FPGA | Verilog | C | Python  
+
+⚡ Designing both logic and circuits    
 
 ---
+
+![Typing Animation](https://readme-typing-svg.herokuapp.com?lines=Electronics+Engineer;FPGA+Developer;CPU+Designer;Bridging+Hardware+and+Software&center=true&width=500&height=50)
 
 ## ⚡ Animation
 <!-- Your electronics animation will go here -->
