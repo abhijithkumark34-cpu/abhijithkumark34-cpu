@@ -1,16 +1,59 @@
-## Hi there 👋
+# ⚡ Abhijith
 
-<!--
-**abhijithkumark34-cpu/abhijithkumark34-cpu** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+### Bridging Software ↔ Hardware  
+### FPGA | Verilog | Digital Design | C | Python  
 
-Here are some ideas to get you started:
+---
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## ⚡ Animation
+<!-- Your electronics animation will go here -->
+
+---
+
+## 🔘 Connect
+<!-- Buttons: Portfolio, Resume, Email -->
+
+---
+
+## 🧠 About Me
+<!-- Code-style introduction -->
+
+---
+
+## 🛠️ Tech Arsenal
+
+### 💻 Programming
+<!-- C, Python -->
+
+### ⚡ Digital Design
+<!-- Verilog, VHDL -->
+
+### 🔧 Tools
+<!-- ModelSim, Git, Linux -->
+
+---
+
+## 🧪 Projects
+
+### ⚡ ALU
+### ⚡ Adders
+### ⚡ Hybrid CPU
+
+---
+
+## 📊 GitHub Stats
+
+---
+
+## ⚡ System Animations
+<!-- Future: ALU / Register / Signals -->
+
+---
+
+## 🌍 Open Source & Vision
+
+---
+
+## 🔗 Connect & Collaborate
+
+
