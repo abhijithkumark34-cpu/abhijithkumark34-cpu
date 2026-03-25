@@ -1,440 +1,112 @@
-<div align="center">
-
-<!-- HERO SECTION -->
-
-# ABHIJITH KUMAR
-
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=22&duration=3000&pause=800&color=00FFAA&center=true&vCenter=true&multiline=false&width=700&lines=Bridging+Software+%E2%86%94+Hardware;Digital+%7C+Analog+%7C+FPGA+%7C+Edge+AI;Building+CPUs+from+Transistors+to+Logic;RTL+Design+%7C+Systems+Engineer+%7C+Circuit+Architect" alt="Typing SVG" /></a>
-
-<br/>
-
-> *"From voltage levels to intelligent systems — I design at every layer of the stack."*
-
-<br/>
-
-![Digital](https://img.shields.io/badge/Digital_Electronics-0D1117?style=flat-square&logo=circuitverse&logoColor=00FFAA)
-![Analog](https://img.shields.io/badge/Analog_Electronics-0D1117?style=flat-square&logo=wolfram&logoColor=FF6B35)
-![FPGA](https://img.shields.io/badge/FPGA_Design-0D1117?style=flat-square&logo=xilinx&logoColor=E040FB)
-![Edge AI](https://img.shields.io/badge/Edge_AI-0D1117?style=flat-square&logo=tensorflow&logoColor=00B4D8)
-
+Abhijith ⚡
+Bridging Software ↔ Hardware
+Digital Electronics  •  Analog Electronics  •  FPGA  •  CPU Design  •  Edge AI
+> Architecting deterministic silicon and intelligent edge systems. 
+> 
+> Bridging the critical boundary between low-level hardware design and software execution.
+> 
+(https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=00FF99&center=true&vCenter=true&width=800&lines=Transistors+%E2%86%92+Logic+Gates;Logic+Gates+%E2%86%92+Microarchitecture;Microarchitecture+%E2%86%92+AI+Systems;Bridging+the+Hardware-Software+Boundary)](https://git.io/typing-svg)
 </div>
-
----
-
-<!-- SYSTEM ANIMATION SECTION -->
-
 <div align="center">
-
-### ⚡ Current Flow Visualization
-
-
- <!-- Save as: animated-current-flow.svg -->
-<svg width="900" height="260" viewBox="0 0 900 260" xmlns="http://www.w3.org/2000/svg">
-
-  <!-- Background -->
-  <rect width="100%" height="100%" fill="#0d1117"/>
-
-  <!-- Glow effect -->
-  <defs>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="3" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-  </defs>
-
-  <!-- TITLE -->
-  <text x="450" y="30" text-anchor="middle" fill="cyan" font-size="18">
-    ⚡ Current Flow Visualization
-  </text>
-
-  <!-- MAIN PATH -->
-  <path id="dataPath" d="M100,130 L800,130" fill="none"/>
-
-  <!-- WIRE -->
-  <line x1="100" y1="130" x2="800" y2="130" stroke="white" stroke-width="2"/>
-
-  <!-- BLOCKS -->
-  <!-- GATE -->
-  <rect x="200" y="100" width="100" height="60" fill="none" stroke="cyan"/>
-  <text x="250" y="135" text-anchor="middle" fill="cyan">GATE</text>
-
-  <!-- ALU -->
-  <rect x="400" y="100" width="100" height="60" fill="none" stroke="orange"/>
-  <text x="450" y="135" text-anchor="middle" fill="orange">ALU</text>
-
-  <!-- AI -->
-  <rect x="600" y="100" width="100" height="60" fill="none" stroke="lime"/>
-  <text x="650" y="135" text-anchor="middle" fill="lime">AI</text>
-
-  <!-- ELECTRONS (DATA FLOW) -->
-  <circle r="5" fill="cyan" filter="url(#glow)">
-    <animateMotion dur="3s" repeatCount="indefinite">
-      <mpath href="#dataPath"/>
-    </animateMotion>
-  </circle>
-
-  <circle r="5" fill="cyan" filter="url(#glow)">
-    <animateMotion dur="3s" begin="0.8s" repeatCount="indefinite">
-      <mpath href="#dataPath"/>
-    </animateMotion>
-  </circle>
-
-  <circle r="5" fill="cyan" filter="url(#glow)">
-    <animateMotion dur="3s" begin="1.6s" repeatCount="indefinite">
-      <mpath href="#dataPath"/>
-    </animateMotion>
-  </circle>
-
-  <!-- CONTROL SIGNAL (reverse direction) -->
-  <path id="controlPath" d="M800,170 L100,170" fill="none"/>
-
-  <line x1="100" y1="170" x2="800" y2="170" stroke="gray" stroke-dasharray="6,4"/>
-
-  <circle r="4" fill="magenta">
-    <animateMotion dur="4s" repeatCount="indefinite">
-      <mpath href="#controlPath"/>
-    </animateMotion>
-  </circle>
-
-  <!-- LABELS -->
-  <text x="450" y="90" text-anchor="middle" fill="white">DATA FLOW</text>
-  <text x="450" y="200" text-anchor="middle" fill="gray">CONTROL SIGNALS</text>
-
-  <!-- ARROW -->
-  <polygon points="800,130 785,120 785,140" fill="white"/>
-
-</svg>
----
-
-<!-- Replace the block above with your custom SVG animation: -->
-<!-- <img src="./assets/circuit-animation.svg" width="800" alt="Circuit Animation"/> -->
-
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="[https://raw.githubusercontent.com/abhisheknaiidu/awesome-github-profile-readme/master/images/placeholder.svg](https://raw.githubusercontent.com/abhisheknaiidu/awesome-github-profile-readme/master/images/placeholder.svg)">
+<img src="[https://raw.githubusercontent.com/abhisheknaiidu/awesome-github-profile-readme/master/images/placeholder.svg](https://raw.githubusercontent.com/abhisheknaiidu/awesome-github-profile-readme/master/images/placeholder.svg)" alt="Electronics Current Flow Visualization" width="80%">
+</picture>
 </div>
-
-
-
-<!-- CONNECT BUTTONS -->
-
 <div align="center">
-
-[![Portfolio](https://img.shields.io/badge/🌐_Portfolio-0D1117?style=for-the-badge&logo=vercel&logoColor=00FFAA&labelColor=0D1117)](https://your-portfolio.dev)
-[![Resume](https://img.shields.io/badge/📄_Resume-0D1117?style=for-the-badge&logo=googledrive&logoColor=FF6B35&labelColor=0D1117)](https://your-resume-link.com)
-[![Email](https://img.shields.io/badge/✉️_Email-0D1117?style=for-the-badge&logo=gmail&logoColor=E040FB&labelColor=0D1117)](mailto:abhijith@email.com)
-[![GitHub](https://img.shields.io/badge/⚡_GitHub-0D1117?style=for-the-badge&logo=github&logoColor=00B4D8&labelColor=0D1117)](https://github.com/abhijith)
-
+<a href="#"><img src="[https://img.shields.io/badge/Portfolio-1A1B26?style=for-the-badge&logo=Web&logoColor=00FF99&border=00FF99](https://img.shields.io/badge/Portfolio-1A1B26?style=for-the-badge&logo=Web&logoColor=00FF99&border=00FF99)" alt="Portfolio"/></a>
+<a href="#"><img src="[https://img.shields.io/badge/Resume-1A1B26?style=for-the-badge&logo=Read-cv&logoColor=00FF99](https://img.shields.io/badge/Resume-1A1B26?style=for-the-badge&logo=Read-cv&logoColor=00FF99)" alt="Resume"/></a>
+<a href="mailto:abhijith.engineer@example.com"><img src="[https://img.shields.io/badge/Email-1A1B26?style=for-the-badge&logo=Gmail&logoColor=00FF99](https://img.shields.io/badge/Email-1A1B26?style=for-the-badge&logo=Gmail&logoColor=00FF99)" alt="Email"/></a>
+<a href="[https://github.com/Abhijith](https://github.com/Abhijith)"><img src="[https://img.shields.io/badge/GitHub-1A1B26?style=for-the-badge&logo=GitHub&logoColor=00FF99](https://img.shields.io/badge/GitHub-1A1B26?style=for-the-badge&logo=GitHub&logoColor=00FF99)" alt="GitHub"/></a>
 </div>
-
----
-
-<!-- ABOUT ME CODE SECTION -->
-
-<div align="center">
-  <img src="https://img.shields.io/badge/SYSTEM_BOOT-INITIALIZING...-00FFAA?style=for-the-badge&labelColor=0D1117" />
-</div>
-
-<br/>
-
-```javascript
-const Abhijith = {
-
-  role        : "Engineering Student | Hardware × Software Engineer",
-  identity    : "Circuit Architect · RTL Designer · Systems Thinker",
-
-  domains: {
-    digital   : ["Boolean Logic", "FSM", "Sequential Circuits", "Flip-Flops"],
-    analog    : ["Op-Amps", "Filters", "Amplifiers", "Signal Conditioning"],
-    fpga      : ["RTL Design", "Synthesis", "Timing Analysis", "Place & Route"],
-    edgeAI    : ["On-device Inference", "Quantization", "MCU Deployment"],
-    cpu       : ["ISA Design", "Datapath", "Control Unit", "Pipeline Stages"],
-  },
-
-  languages   : ["C", "Python", "Verilog", "VHDL"],
-
-  currentLearning: [
-    "Flip-Flop Timing & Metastability",
-    "Finite State Machines (Mealy & Moore)",
-    "RTL → Netlist → Bitstream Flow",
-    "Analog Front-End Design",
-    "Edge AI Deployment on FPGA",
-  ],
-
-  activeProject: {
-    name      : "Hybrid CPU — FPGA + Hardware ALU",
-    stack     : ["Verilog", "FPGA", "Custom ALU", "C"],
-    goal      : "Full custom CPU implemented on FPGA with hardware arithmetic",
-  },
-
-  vision      : "Transistors → Logic Gates → CPU → Intelligent Edge Systems",
-  status      : "🟢 Actively building. Always learning.",
+⚙️ System Architecture: Identity Object
+const abhijith = {
+    role: "Hardware-Software Co-Design Engineer",
+    identity: "Bridge between physical circuitry and algorithmic execution",
+    domains:,
+    languages:,
+    currentLearning:,
+    project: "Hybrid CPU FPGA + Hardware ALU",
+    vision: "Circuits → AI Systems: Evolving deterministic hardware into autonomous intelligence."
 };
-```
 
----
+🔬 Technical Arsenal
+Programming 
 
-<!-- TECH ARSENAL -->
 
+Digital Design 
+
+
+!(https://img.shields.io/badge/VHDL-1A1B26?style=for-the-badge&logo=stmicroelectronics&logoColor=BB9AF7)
+Analog Electronics 
+
+Edge AI 
+
+
+!(https://img.shields.io/badge/Edge_Systems-1A1B26?style=for-the-badge&logo=raspberrypi&logoColor=FF9E64)
+Tools 
+
+!(https://img.shields.io/badge/ModelSim-1A1B26?style=for-the-badge&logo=modelsim&logoColor=E0AF68)
+
+
+!(https://img.shields.io/badge/VS_Code-1A1B26?style=for-the-badge&logo=visualstudiocode&logoColor=E0AF68)
+🚀 Systems & Hardware Portfolio
+Hybrid CPU (FPGA + Hardware ALU)
+ * Architected a heterogeneous computing platform by tightly coupling an ARM processor with custom FPGA programmable logic fabric.
+ * Developed high-throughput data interconnects utilizing AXI bus protocols and PCIe Direct Memory Access (DMA) to optimize the hardware-software boundary.
+ * Offloaded compute-intensive algorithms to custom IP blocks, achieving significant performance-per-watt improvements over purely software-based integer implementations.
+Engineering Whitepaper: Heterogeneous Architecture Analysis
+Modern computational workloads, specifically in the domains of machine learning and lossless data compression, rapidly exhaust the capabilities of general-purpose central processing units. To circumvent this bottleneck, heterogeneous computing models partition execution across diverse processing substrates. This project focuses on a hybrid Field-Programmable Gate Array (FPGA) and CPU architecture, specifically leveraging a System-on-Chip (SoC) environment such as the Xilinx Zynq-7000 series. The Zynq-7000 platform elegantly integrates a dual-core ARM Cortex-A9 processor with programmable logic, facilitating high-bandwidth, low-latency communication via Advanced eXtensible Interface (AXI) interconnects.
+The objective of this architecture is the seamless offloading of mathematically intensive microoperations from software execution to dedicated silicon hardware. For instance, the software implementation of complex operations—such as IEEE 754 32-bit floating-point arithmetic (multiplication, division, addition, subtraction)—requires significant clock cycles on a standard integer-based CPU core. By defining a custom hardware Arithmetic Logic Unit (ALU) directly within the FPGA fabric using Very High Speed Integrated Circuit Hardware Description Language (VHDL) , these instructions are executed with extreme parallelism.
+The implementation process involves defining the microarchitecture at the Register Transfer Level (RTL), synthesizing the logic in environments such as Xilinx Vivado, and routing the physical resources. Data traverses from the host memory to the FPGA via Direct Memory Access (DMA) over Peripheral Component Interconnect Express (PCIe), effectively bypassing the CPU cache hierarchy to minimize latency. The system was verified through real-time application testing, converting decimal inputs into IEEE 754 representations on the ARM core, transferring the payloads across the AXI bridge, computing the result within the custom hardware ALU, and returning the output. Empirical studies in similar hybrid designs (such as customized SIMD 16-bit floating-point instructions on a Nios II processor) demonstrate speed-up factors ranging from 1.5x to over 2x compared to pure software implementations, heavily justifying the engineering overhead associated with hardware-software co-design.
+| Subsystem Component | Function / Implementation | Interconnect Protocol |
+|---|---|---|
+| Control Processor | Dual-core ARM Cortex-A9; manages OS, file system, and sequential logic. | AXI4 Master |
+| Custom IP (ALU) | 32-bit IEEE 754 Floating-Point ALU synthesized in FPGA fabric via VHDL. | AXI4 Slave / Stream |
+| Data Transport | High-bandwidth Direct Memory Access (DMA) from host memory. | PCIe / AXI Interconnect |
+4-bit Arithmetic Logic Unit (ALU)
+ * Designed and synthesized the foundational mathematical core of a microprocessor using discrete logical components and VHDL specifications.
+ * Implemented robust combinational logic capable of performing exhaustive arithmetic (addition/subtraction) and bitwise operations (AND, OR, XOR, NOT).
+ * Evaluated adiabatic logic topologies against traditional static CMOS to systematically reduce dynamic power consumption in the datapath.
+Engineering Whitepaper: Datapath Synthesis and Adiabatic Logic
+The Arithmetic Logic Unit (ALU) represents the foundational computational engine within any processing architecture, responsible for executing the mathematical and logical microoperations required by the instruction set. This project involved the rigorous design of a 4-bit ALU, transitioning from theoretical Boolean logic to gate-level synthesis and hardware implementation.
+The core arithmetic functionality is built around a cascade of full adders. Addition is performed utilizing XOR gates for sum generation and AND/OR logic for carry propagation. To handle arithmetic subtraction without expanding the gate count with dedicated subtractor circuits, the design implements two's complement logic. Specifically, the subtrahend input (B) is inverted utilizing an XOR array acting as a conditional inverter (where B ⊕ 1), and a logic high (1) is asserted at the initial carry-in (Cin) bit. This transformation allows the core addition circuitry to compute A + (~B + 1), natively yielding A - B. The control unit drives a parallel multiplexer (MUX) network, selecting the active operation path based on a designated operation code (opcode).
+A critical avenue of research within this project was the optimization of power dissipation. Modern ALU designs prioritize not only execution speed but also thermal efficiency. The conventional static Complementary Metal-Oxide-Semiconductor (CMOS) logic, while reliable, suffers from 1/2 CV_{dd}^2 energy dissipation per switching cycle. As an alternative, this project investigated the performance characteristics of Complementary Energy Path Adiabatic Logic (CEPAL). Analyses conducted within the Tanner EDA environment at a 250nm technology node demonstrated that a CEPAL-based 4-bit ALU is up to 55% more power-efficient than its static CMOS counterpart when operating at 100MHz with a 2.5V supply voltage. These findings highlight the critical trade-offs between architectural complexity, operating frequency, and power consumption inherent to digital system design.
+| Operation / Opcode | Logical Implementation Strategy | Target Outcome |
+|---|---|---|
+| Addition (A + B) | 4-bit Ripple-Carry integration; XOR for sum, AND for carry. | Computes native binary sum with Cout. |
+| Subtraction (A - B) | Two's complement representation; B ⊕ 1 with Cin = 1. | Reuses adder hardware for subtraction. |
+| Bitwise NAND | Direct logic gate implementation; demonstrates NAND universality. | Foundational logic evaluation. |
+| Bitwise XOR | Dedicated 74HC86 or equivalent RTL XOR assignment. | Cryptographic and parity operations. |
+####(#)
+ * Engineered an n-bit cascade addition architecture by serially chaining multiple 1-bit full adders to process multi-bit arithmetic.
+ * Simulated transient electrical characteristics using Cadence Virtuoso and 90nm GPDK technology to accurately measure logic gate propagation delays.
+ * Verified physical and behavioral hardware models using VHDL within the ModelSim simulation environment.
+Engineering Whitepaper: Propagation Delay and Transistor-Level Simulation
+Multi-bit binary arithmetic demands circuits that can scale according to data word length. The Ripple Carry Adder (RCA) accomplishes this by cascading sequential 1-bit full adders. Each individual full adder accepts three inputs—the corresponding bits from operands A and B, and the carry-in bit Cin—to generate a Sum and a carry-out bit Cout. The sum is derived via A ⊕ B ⊕ Cin, while the carry-out is resolved through (A · B) + (Cin · (A ⊕ B)).
+While architecturally straightforward, the RCA exposes fundamental physical limitations in digital design: the critical path propagation delay. The final sum of the most significant bit (MSB) cannot settle to a valid state until the carry bit has successfully "rippled" through every preceding stage. Consequently, the total computational latency scales linearly with the bit-width of the operands, making standard RCAs unsuitable for high-frequency processors without advanced techniques like Carry Look-Ahead (CLA) topologies.
+To quantify these delays, this project moved beyond behavioral VHDL/Verilog simulations in ModelSim  into physical, transistor-level modeling. Utilizing Cadence Virtuoso and a 90nm Generic Process Design Kit (GPDK), the fundamental CMOS gates (XOR, AND, OR) were drafted at the transistor level. Transient analysis was performed utilizing the Spectre simulator, allowing for the precise observation of internal node capacitances, transition times, and the true analog nature of digital switching. By correlating the theoretical VHDL simulations with the SPICE-level transient waveforms, the project bridges the gap between digital abstraction and the underlying analog physics of semiconductor devices.
+📊 Open Source Telemetry
 <div align="center">
-  <img src="https://img.shields.io/badge/◈──_TECH_ARSENAL_──◈-0D1117?style=for-the-badge&labelColor=0D1117&color=00FFAA" />
+<img src="[https://github-readme-stats.vercel.app/api?username=abhisheknaiidu&theme=tokyonight&show_icons=true&hide_border=true&count_private=true](https://github-readme-stats.vercel.app/api?username=abhisheknaiidu&theme=tokyonight&show_icons=true&hide_border=true&count_private=true)" alt="GitHub Stats" width="48%" />
+<img src="[https://github-readme-stats.vercel.app/api/top-langs/?username=abhisheknaiidu&theme=tokyonight&layout=compact&hide_border=true](https://github-readme-stats.vercel.app/api/top-langs/?username=abhisheknaiidu&theme=tokyonight&layout=compact&hide_border=true)" alt="Top Languages" width="48%" />
 </div>
-
-<br/>
-
-**⚙️ Programming Languages**
-
-![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=FFD43B)
-
-<br/>
-
-**🔲 Digital Design & HDL**
-
-![Verilog](https://img.shields.io/badge/Verilog-E040FB?style=for-the-badge&logo=v&logoColor=white&labelColor=1a0030)
-![VHDL](https://img.shields.io/badge/VHDL-9C27B0?style=for-the-badge&logo=v&logoColor=white&labelColor=1a0030)
-![FPGA](https://img.shields.io/badge/FPGA_Design-FF6B35?style=for-the-badge&logo=xilinx&logoColor=white&labelColor=1a0010)
-![RTL](https://img.shields.io/badge/RTL_Design-00FFAA?style=for-the-badge&logoColor=white&labelColor=0D1117)
-![FSM](https://img.shields.io/badge/FSM_Design-00B4D8?style=for-the-badge&logoColor=white&labelColor=0D1117)
-
-<br/>
-
-**🔌 Analog Electronics**
-
-![Op-Amps](https://img.shields.io/badge/Op--Amps-FF6B35?style=for-the-badge&logoColor=white&labelColor=1a0800)
-![Filters](https://img.shields.io/badge/Active_Filters-E040FB?style=for-the-badge&logoColor=white&labelColor=1a0030)
-![Signal](https://img.shields.io/badge/Signal_Conditioning-00FFAA?style=for-the-badge&logoColor=white&labelColor=0D1117)
-![Amplifiers](https://img.shields.io/badge/Amplifier_Design-FF4081?style=for-the-badge&logoColor=white&labelColor=1a0010)
-
-<br/>
-
-**🤖 Edge AI & Embedded Intelligence**
-
-![TensorFlow Lite](https://img.shields.io/badge/TFLite-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
-![Edge AI](https://img.shields.io/badge/Edge_AI-00B4D8?style=for-the-badge&logo=nvidia&logoColor=white&labelColor=001a20)
-![MCU Deploy](https://img.shields.io/badge/MCU_Deployment-00FFAA?style=for-the-badge&logoColor=white&labelColor=0D1117)
-![Quantization](https://img.shields.io/badge/Model_Quantization-9C27B0?style=for-the-badge&logoColor=white&labelColor=1a0030)
-
-<br/>
-
-**🛠️ Tools & Environment**
-
-![ModelSim](https://img.shields.io/badge/ModelSim-1565C0?style=for-the-badge&logoColor=white&labelColor=001030)
-![Vivado](https://img.shields.io/badge/Xilinx_Vivado-E040FB?style=for-the-badge&logo=xilinx&logoColor=white&labelColor=1a0030)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)
-![LTspice](https://img.shields.io/badge/LTspice-CC0000?style=for-the-badge&logoColor=white&labelColor=1a0000)
-
----
-
-<!-- PROJECTS SECTION -->
-
+> Note: Analytical visualizations are rendered using the tokyonight theme palette, maximizing contrast and adhering to a professional neon/cyberpunk aesthetic.
+> 
+🌌 System Vision: Transistors → Logic → CPU → AI Systems
+The computing paradigm is undergoing its most radical transformation since the invention of the integrated circuit. For decades, the industry relied heavily on Dennard scaling and Moore's Law—the periodic shrinking of transistor geometries to double density and increase clock speeds without exponentially scaling power. However, as transistor gate lengths approach fundamental atomic limits, physical phenomena such as quantum tunneling and current leakage degrade the efficiency gains of classical scaling.
+This physical ceiling intersects with an unprecedented explosion in computational demand. The meteoric rise of generative artificial intelligence, neural networks, and deep learning algorithms requires colossal parallel processing capabilities and massive memory bandwidth. General-purpose Central Processing Units (CPUs), designed to optimize single-thread latency and complex control flow, are fundamentally bottlenecked when executing the millions of matrix-multiply-accumulate (MAC) operations required by modern AI.
+Consequently, the future of engineering lies in domain-specific architectures. We are witnessing the transition from generic CPUs to highly specialized hardware: Application-Specific Integrated Circuits (ASICs), Tensor Processing Units (TPUs), and Field-Programmable Gate Arrays (FPGAs) customized explicitly for AI workloads.
+To engineer these systems, one must comprehend the entire hardware-software continuum. It requires an intimate understanding of how analog electrical properties dictate Transistor switching times; how those transistors combine to form digital Logic Gates; how those gates are orchestrated into the microarchitecture of a CPU; and how that CPU must interface with custom hardware accelerators to deploy autonomous AI Systems. Engineers who treat hardware as an opaque black box will be limited; those who bridge the boundary—optimizing algorithms to exploit specific physical silicon characteristics—will define the next generation of embedded and edge intelligence.
+🎯 Career Vision: The Semiconductor Imperative
+My professional trajectory is sharply focused on the semiconductor industry and low-level systems engineering. The global semiconductor market is projected to reach a valuation of $1 trillion by 2030, driven overwhelmingly by the demand for high-performance chips, intelligent automotive systems, and supply chain resilience. To sustain this growth, industry analyses indicate a requirement for an additional one million skilled workers by the end of the decade.
+I aim to position myself at the forefront of this industrial surge. My focus on hardware-centric development is driven by a desire to operate where innovation physically manifests:
+ * Low-Level Systems & Firmware: Developing the intricate driver layers and real-time operating systems (RTOS) that allow software to safely and efficiently interface with raw silicon.
+ * Hardware-Software Co-Design: Engineering heterogeneous computing platforms where parallelizable tasks are aggressively offloaded to FPGA fabric or custom IP blocks, maximizing the performance-per-watt metric crucial for modern Edge AI.
+ * Semiconductor Device & Integration Engineering: Merging continuous-time analog electronics with discrete digital logic, ensuring signal integrity, and supporting the integration of complex ICs into robust end-user platforms.
+The semiconductor industry is the backbone of global technological advancement. By maintaining a rigorous focus on the physical implementation of computational theory, I am dedicated to pushing the boundaries of what is electrically and algorithmically possible.
+🌐 Initialize Handshake
+If you are working on open-source hardware, silicon design, embedded Linux, or edge AI acceleration, I am highly interested in collaborating. Let's build systems that matter.
 <div align="center">
-  <img src="https://img.shields.io/badge/◈──_FEATURED_PROJECTS_──◈-0D1117?style=for-the-badge&labelColor=0D1117&color=E040FB" />
-</div>
-
-<br/>
-
-<table width="100%">
-<tr>
-<td width="50%" valign="top">
-
-### ⚡ Hybrid CPU — FPGA + Hardware ALU
-> *The flagship build*
-
-- Custom CPU architecture implemented on FPGA fabric combining soft-core logic and a hardware-accelerated ALU
-- Full datapath: Fetch → Decode → Execute → Writeback pipeline stages in Verilog
-- Arithmetic operations offloaded to dedicated silicon-level hardware ALU for maximum throughput
-
-![Verilog](https://img.shields.io/badge/Verilog-E040FB?style=flat-square)
-![FPGA](https://img.shields.io/badge/FPGA-FF6B35?style=flat-square)
-![C](https://img.shields.io/badge/C-00599C?style=flat-square)
-
-</td>
-<td width="50%" valign="top">
-
-### 🔲 4-Bit ALU — RTL Implementation
-> *Where arithmetic meets silicon*
-
-- Fully synthesizable 4-bit Arithmetic Logic Unit supporting ADD, SUB, AND, OR, XOR, NOT operations
-- Complete with carry-out, zero flag, and overflow detection logic
-- Verified with exhaustive testbench — 100% functional coverage in simulation
-
-![Verilog](https://img.shields.io/badge/Verilog-E040FB?style=flat-square)
-![ModelSim](https://img.shields.io/badge/ModelSim-1565C0?style=flat-square)
-![RTL](https://img.shields.io/badge/RTL-00FFAA?style=flat-square)
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### ➕ Ripple Carry Adder — Gate Level
-> *Back to first principles*
-
-- N-bit ripple carry adder designed at gate level using full-adder primitives in Verilog
-- Propagation delay analysis and critical path optimization with timing constraints
-- Scalable architecture — parameterized bit-width for flexible synthesis targets
-
-![Verilog](https://img.shields.io/badge/Verilog-E040FB?style=flat-square)
-![VHDL](https://img.shields.io/badge/VHDL-9C27B0?style=flat-square)
-![Gate_Level](https://img.shields.io/badge/Gate_Level-00B4D8?style=flat-square)
-
-</td>
-<td width="50%" valign="top">
-
-### 🤖 Edge AI Inference — MCU Deployment
-> *Intelligence at the edge*
-
-- Lightweight neural network model quantized and deployed on embedded microcontroller
-- On-device inference pipeline with minimal memory footprint using TensorFlow Lite
-- Bridging AI model design and real-time hardware execution on constrained devices
-
-![TFLite](https://img.shields.io/badge/TFLite-FF6F00?style=flat-square)
-![C](https://img.shields.io/badge/C-00599C?style=flat-square)
-![Edge_AI](https://img.shields.io/badge/Edge_AI-00B4D8?style=flat-square)
-
-</td>
-</tr>
-</table>
-
----
-
-<!-- GITHUB STATS -->
-
-<div align="center">
-  <img src="https://img.shields.io/badge/◈──_SYSTEM_METRICS_──◈-0D1117?style=for-the-badge&labelColor=0D1117&color=00B4D8" />
-</div>
-
-<br/>
-
-<div align="center">
-
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=abhijith&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00FFAA&icon_color=E040FB&text_color=C9D1D9&ring_color=00FFAA" />
-&nbsp;&nbsp;
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=abhijith&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00FFAA&text_color=C9D1D9&langs_count=8" />
-
-</div>
-
-<div align="center">
-
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=abhijith&theme=tokyonight&hide_border=true&background=0D1117&stroke=00FFAA&ring=E040FB&fire=FF6B35&currStreakLabel=00FFAA&sideLabels=C9D1D9&dates=8B949E" />
-
-</div>
-
----
-
-<!-- SYSTEM VISION SECTION -->
-
-<div align="center">
-  <img src="https://img.shields.io/badge/◈──_SYSTEM_VISION_──◈-0D1117?style=for-the-badge&labelColor=0D1117&color=FF6B35" />
-</div>
-
-<br/>
-
-```
-┌─────────────────────────────────────────────────────────────────┐
-│                    THE ENGINEERING STACK                        │
-│                                                                 │
-│   ⚡ PHYSICS          Electrons, Holes, Semiconductor Materials │
-│        │                                                        │
-│   🔌 TRANSISTOR       MOSFET, BJT — Amplify, Switch, Control    │
-│        │                                                        │
-│   🔲 LOGIC GATE       AND, OR, NOT — Boolean Universe          │
-│        │                                                        │
-│   🏗️  DIGITAL CIRCUIT  Adders, Mux, Decoders, Flip-Flops       │
-│        │                                                        │
-│   ⚙️  CPU DATAPATH    ALU + Registers + Control Unit           │
-│        │                                                        │
-│   💾 RTL / FPGA       Verilog → Synthesis → Silicon             │
-│        │                                                        │
-│   🤖 EDGE AI          On-device ML → Intelligence at the Edge  │
-│                                                                 │
-│              [ I OPERATE AT EVERY LAYER ]                       │
-└─────────────────────────────────────────────────────────────────┘
-```
-
-<div align="center">
-
-*"Most engineers pick a layer. I understand them all."*
-
-</div>
-
----
-
-<!-- OPEN SOURCE & CAREER VISION -->
-
-<div align="center">
-  <img src="https://img.shields.io/badge/◈──_CAREER_TRAJECTORY_──◈-0D1117?style=for-the-badge&labelColor=0D1117&color=9C27B0" />
-</div>
-
-<br/>
-
-<div align="center">
-
-| Target Domain | Focus Area | Status |
-|:---:|:---:|:---:|
-| 🏭 Semiconductor Industry | VLSI / RTL Design | 🟢 Pursuing |
-| ⚡ FPGA Engineering | Digital Systems | 🟢 Active |
-| 🤖 Edge AI Systems | Hardware-Accelerated ML | 🟡 Exploring |
-| 🔌 Analog IC Design | Mixed-Signal Systems | 🟡 Learning |
-| 🖥️ Low-Level Systems | Embedded + CPU Architecture | 🟢 Active |
-
-</div>
-
-<br/>
-
-```
-MISSION:   Build intelligent hardware systems that operate at the intersection
-           of analog physics, digital logic, programmable silicon, and AI.
-
-TARGET:    Semiconductor companies · FPGA vendors · Edge AI startups ·
-           CPU/GPU architecture teams · Embedded systems labs.
-
-APPROACH:  Bottom-up engineering. Understand the electrons before the algorithm.
-```
-
----
-
-<!-- CONNECT & COLLABORATE -->
-
-<div align="center">
-  <img src="https://img.shields.io/badge/◈──_CONNECT_&_COLLABORATE_──◈-0D1117?style=for-the-badge&labelColor=0D1117&color=00FFAA" />
-</div>
-
-<br/>
-
-<div align="center">
-
-| Channel | Link |
-|:---:|:---:|
-| ✉️ Email | [abhijith@email.com](mailto:abhijithkumark34@gmail.com) |
-| 💼 LinkedIn | [linkedin.com/in/abhijith](https://www.linkedin.com/in/abhijith-kumar-eee) |
-| 🌐 Portfolio | [your-portfolio.dev](https://your-portfolio.dev) |
-| ⚡ GitHub | [github.com/abhijith](https://github.com/abhijithkumark34-cpu) |
-
-<br/>
-
-[![Email](https://img.shields.io/badge/Email_Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:abhijith@email.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/abhijith)
-[![Portfolio](https://img.shields.io/badge/Portfolio-0D1117?style=for-the-badge&logo=vercel&logoColor=00FFAA)](https://your-portfolio.dev)
-
-</div>
-
----
-
-<div align="center">
-
-<img src="https://komarev.com/ghpvc/?username=abhijith&color=00FFAA&style=for-the-badge&label=PROFILE+VIEWS" />
-
-<br/><br/>
-
-```
-⚡  Abhijith  |  Hardware × Software  |  Building from the ground up  ⚡
-   Transistors → Gates → CPU → Systems → Edge AI → The Future
-```
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,24&height=80&section=footer&animation=twinkling" width="100%"/>
-
+ 📧 Email Me    |    🔗 LinkedIn    |    💻 Portfolio 
 </div>
