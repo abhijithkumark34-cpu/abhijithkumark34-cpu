@@ -27,7 +27,7 @@
 
 ### ⚡ Current Flow Visualization
 
-```
+
  <!-- Save as: animated-current-flow.svg -->
 <svg width="900" height="260" viewBox="0 0 900 260" xmlns="http://www.w3.org/2000/svg">
 
