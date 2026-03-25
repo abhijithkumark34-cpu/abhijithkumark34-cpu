@@ -29,7 +29,6 @@
 ---
 
 ## 🧠 About Me
-## 🧠 About Me
 
 ```javascript
 const abhijith = {
@@ -68,6 +67,37 @@ const abhijith = {
 ---
 
 ## 🛠️ Tech Arsenal
+
+### 💻 Programming
+![C](https://img.shields.io/badge/C-Programming-blue?style=for-the-badge)
+![Python](https://img.shields.io/badge/Python-AI-yellow?style=for-the-badge)
+
+---
+
+### ⚡ Digital Design
+![Verilog](https://img.shields.io/badge/Verilog-RTL-orange?style=for-the-badge)
+![VHDL](https://img.shields.io/badge/VHDL-Learning-purple?style=for-the-badge)
+![FPGA](https://img.shields.io/badge/FPGA-Development-green?style=for-the-badge)
+
+---
+
+### 🔌 Analog Electronics
+![Analog](https://img.shields.io/badge/Analog-Circuits-red?style=for-the-badge)
+![OpAmp](https://img.shields.io/badge/OpAmp-Design-critical?style=for-the-badge)
+
+---
+
+### 🧠 Edge AI
+![Edge AI](https://img.shields.io/badge/Edge%20AI-Systems-blueviolet?style=for-the-badge)
+![Embedded AI](https://img.shields.io/badge/Embedded-AI-darkgreen?style=for-the-badge)
+
+---
+
+### 🔧 Tools
+![ModelSim](https://img.shields.io/badge/ModelSim-Simulation-lightgrey?style=for-the-badge)
+![Git](https://img.shields.io/badge/Git-VersionControl-black?style=for-the-badge)
+![Linux](https://img.shields.io/badge/Linux-System-yellowgreen?style=for-the-badge)
+![VS Code](https://img.shields.io/badge/VSCode-Editor-blue?style=for-the-badge)
 
 ### 💻 Programming
 <!-- C, Python -->
