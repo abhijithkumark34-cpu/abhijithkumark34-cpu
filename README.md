@@ -1,11 +1,7 @@
-�
-
-�
-
-�
-
-�
-
+<div align="center">
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<!--                        HERO SECTION                           -->
+<!-- ═══════════════════════════════════════════════════════════════ -->
 ██╗  ██╗ █████╗ ██████╗ ██████╗ ██╗      ██╗ ██╗████████╗██╗  ██╗
 ██║  ██║██╔══██╗██╔══██╗██╔══██╗██║      ██║ ██║╚══██╔══╝██║  ██║
 ███████║███████║██████╔╝██║  ██║██║█████╗██║ ██║   ██║   ███████║
@@ -15,27 +11,21 @@
 ⚡ ABHIJITH
 [ Bridging Software ↔ Hardware ]
 Digital · Analog · FPGA · CPU Architecture · Edge AI
-�
-
+<br>
 
 🧠 CPU builder mindset — thinking in registers, gates, and clock cycles
 🔬 System-level thinker — from transistors to intelligent systems
 ⚡ Circuit-to-AI engineer — where electrons meet algorithms
-�
 
+<br>
+Show Image
+</div>
 
-�
-Load image
-�
-
-�
-
-�
-
-�
-
-�
-
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<!--                  SYSTEM ANIMATION SECTION                     -->
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<div align="center">
+```
 ╔══════════════════════════════════════════════════════════════════╗
 ║          ⚡  LIVE SYSTEM ARCHITECTURE VISUALIZATION  ⚡          ║
 ╠══════════════════════════════════════════════════════════════════╣
@@ -64,34 +54,24 @@ Load image
 ║    AND         └─┘└─┘└─┘                                         ║
 ║                                                                  ║
 ╚══════════════════════════════════════════════════════════════════╝
-�
+```
+</div>
 
-�
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<!--                     CONNECT BUTTONS                           -->
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<div align="center">
+Show Image
+Show Image
+Show Image
+Show Image
+</div>
 
-�
-
-�
-
-�
-
-�
-�
-�
-�
-Load image
-Load image
-Load image
-Load image
-�
-
-�
-
-�
-
-�
-
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<!--                       ABOUT ME                                -->
+<!-- ═══════════════════════════════════════════════════════════════ -->
 🖥️ < About Me />
-const ABHIJITH = {
+javascriptconst ABHIJITH = {
 
   role        : "Hybrid Hardware-Software Engineer",
   status      : "Engineering Student | Builder | Explorer",
@@ -145,187 +125,159 @@ const ABHIJITH = {
   currentlyBuilding : () => "The future, one gate at a time ⚡"
 
 };
-�
 
-�
-
-�
-
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<!--                      TECH ARSENAL                             -->
+<!-- ═══════════════════════════════════════════════════════════════ -->
 ⚙️ Tech Arsenal
-�
-
+<div align="center">
 💻 Programming Languages
-�
-�
-Load image
-Load image
+Show Image
+Show Image
+
 🔷 Digital Design
-�
-�
-�
-Load image
-Load image
-Load image
+Show Image
+Show Image
+Show Image
+
 📡 Analog Electronics
-�
-�
-�
-Load image
-Load image
-Load image
+Show Image
+Show Image
+Show Image
+
 🤖 Edge AI
-�
-�
-�
-Load image
-Load image
-Load image
+Show Image
+Show Image
+Show Image
+
 🛠️ Hardware Platforms
-�
-�
-Load image
-Load image
+Show Image
+Show Image
+
 🔧 Tools & Software
-�
-�
-�
-�
-�
-Load image
-Load image
-Load image
-Load image
-Load image
+Show Image
+Show Image
+Show Image
+Show Image
+Show Image
+
 🚀 Future Stack — Semiconductor & VLSI Roadmap
 [ ACTIVELY LEARNING / NEXT ON THE MAP ]
-�
-�
-�
-�
-�
-�
-�
-�
-�
-�
-Load image
-Load image
-Load image
-Load image
-Load image
-Load image
-Load image
-Load image
-Load image
-Load image
-�
+Show Image
+Show Image
+Show Image
+Show Image
+Show Image
+Show Image
+Show Image
+Show Image
+Show Image
+Show Image
+</div>
 
-�
-
-�
-
-�
-
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<!--                       PROJECTS                                -->
+<!-- ═══════════════════════════════════════════════════════════════ -->
 🔩 Projects
-�
-
+<table>
+<tr>
+<td width="50%">
 ⚡ 4-Bit ALU
 Digital Design · Gate-Level Logic
+
 Implements arithmetic (ADD, SUB, INC) and logic (AND, OR, XOR, NOT) operations across 4-bit operands
 Built from fundamental digital design principles — cascaded full adders, multiplexed outputs, carry logic
 Foundation project demonstrating deep understanding of combinational circuit design and hardware computation
-�
 
+</td>
+<td width="50%">
 🔗 Ripple Carry Adder
 Arithmetic Circuits · Carry Propagation
+
 Models carry propagation through cascaded full adder stages — critical concept in hardware arithmetic
 Explores the fundamental speed-vs-simplicity tradeoff in digital addition circuits
 Serves as the architectural foundation for ALU design and binary arithmetic hardware
-�
 
+</td>
+</tr>
+<tr>
+<td width="50%">
 🧠 Hybrid CPU (Flagship Project)
 FPGA · Hardware ALU · CPU Architecture
+
 FPGA handles control logic — FSM, instruction decode, register file, and datapath orchestration
 External hardware ALU built from discrete logic performs physical computation alongside programmable logic
 True hardware-software co-design — bridges programmable FPGA fabric with real-world circuit integration
-�
 
+</td>
+<td width="50%">
 📡 Edge AI Inference System (In Progress)
 Edge AI · Embedded Systems · Raspberry Pi
+
 Deploying TinyML models on resource-constrained hardware platforms for real-time inference
 Exploring hardware accelerator concepts — how neural network inference maps to digital logic
 Bridging algorithm design with hardware constraints: latency, power, and memory trade-offs
-�
 
-�
+</td>
+</tr>
+</table>
 
-�
-
-�
-
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<!--                      GITHUB STATS                             -->
+<!-- ═══════════════════════════════════════════════════════════════ -->
 📊 GitHub Stats
-�
+<div align="center">
+<img src="https://github-readme-stats.vercel.app/api?username=abhijith&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00FFB3&icon_color=00FFB3&text_color=C9D1D9&rank_icon=github" width="49%" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=abhijith&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00FFB3&text_color=C9D1D9&langs_count=8" width="49%" />
+<br/>
+Show Image
+</div>
 
-�
-￼ ￼
-�
-
-
-�
-Load image
-�
-
-�
-
-�
-
-�
-
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<!--                    SYSTEM VISION                               -->
+<!-- ═══════════════════════════════════════════════════════════════ -->
 🌌 System Vision
-�
-
-THE HIERARCHY OF INTELLIGENCE
+<div align="center">
+```
+                        THE HIERARCHY OF INTELLIGENCE
+═══════════════════════════════════════════════════════════════════════
+⚛️  ELECTRONS
+│
+▼
+🔲  TRANSISTORS  →  switching, amplifying, controlling
+│
+▼
+🔀  LOGIC GATES  →  AND, OR, NOT, XOR — the atoms of computation
+│
+▼
+🧩  CIRCUITS     →  adders, multiplexers, flip-flops, registers
+│
+▼
+🏗️  CPU           →  control unit + ALU + memory + datapath
+│
+▼
+🖥️  SYSTEMS       →  OS, compilers, firmware, drivers
+│
+▼
+🤖  EDGE AI       →  intelligent inference at the hardware boundary
+│
+▼
+🌐  INTELLIGENT SYSTEMS  →  autonomous, adaptive, aware
+═══════════════════════════════════════════════════════════════════════
+     "Hardware is not the bottleneck — it is the foundation."
+     "Every algorithm runs on silicon. I build the silicon."
+     "From electrons to AI: this is the full stack."
 ═══════════════════════════════════════════════════════════════════════
 
-   ⚛️  ELECTRONS
-         │
-         ▼
-   🔲  TRANSISTORS  →  switching, amplifying, controlling
-         │
-         ▼
-   🔀  LOGIC GATES  →  AND, OR, NOT, XOR — the atoms of computation
-         │
-         ▼
-   🧩  CIRCUITS     →  adders, multiplexers, flip-flops, registers
-         │
-         ▼
-   🏗️  CPU           →  control unit + ALU + memory + datapath
-         │
-         ▼
-   🖥️  SYSTEMS       →  OS, compilers, firmware, drivers
-         │
-         ▼
-   🤖  EDGE AI       →  intelligent inference at the hardware boundary
-         │
-         ▼
-   🌐  INTELLIGENT SYSTEMS  →  autonomous, adaptive, aware
+</div>
 
-═══════════════════════════════════════════════════════════════════════
+---
 
-         "Hardware is not the bottleneck — it is the foundation."
-         "Every algorithm runs on silicon. I build the silicon."
-         "From electrons to AI: this is the full stack."
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<!--                  OPEN SOURCE & CAREER VISION                  -->
+<!-- ═══════════════════════════════════════════════════════════════ -->
 
-═══════════════════════════════════════════════════════════════════════
-�
-
-�
-
-�
-
-�
-
-🎯 Career Vision & Open Source
+## 🎯 Career Vision & Open Source
 ┌─────────────────────────────────────────────────────────────────┐
 │                    WHERE I'M HEADING                            │
 ├─────────────────────────────────────────────────────────────────┤
@@ -349,39 +301,41 @@ THE HIERARCHY OF INTELLIGENCE
 │      Optimize the architecture → Ship real hardware            │
 │                                                                 │
 └─────────────────────────────────────────────────────────────────┘
-�
 
-�
+---
 
-�
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<!--                   CONNECT & COLLABORATE                       -->
+<!-- ═══════════════════════════════════════════════════════════════ -->
 
-📡 Connect & Collaborate
-�
+## 📡 Connect & Collaborate
 
+<div align="center">
 If you're working on:
-  ⚡ Digital or Analog Electronics
-  🔷 FPGA / HDL Projects
-  🧠 CPU Architecture or RISC-V
-  🤖 Edge AI / Embedded Intelligence
-  🔬 Semiconductor or VLSI Design
-
+⚡ Digital or Analog Electronics
+🔷 FPGA / HDL Projects
+🧠 CPU Architecture or RISC-V
+🤖 Edge AI / Embedded Intelligence
+🔬 Semiconductor or VLSI Design
 → Let's build something real.
-�
 
+<br>
 
-�
-�
-�
-Load image
-Load image
-Load image
-�
+[![Email](https://img.shields.io/badge/REACH_OUT-abhijith@email.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:abhijith@email.com)
+[![LinkedIn](https://img.shields.io/badge/CONNECT-LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/abhijith)
+[![Portfolio](https://img.shields.io/badge/EXPLORE-Portfolio-00FFB3?style=for-the-badge&logo=vercel&logoColor=000000)](https://your-portfolio.dev)
 
+<br>
 
+---
 ⚡ "Not just an engineer. A builder of thinking machines — starting from the gate." ⚡
-�
-Load image
-�
 
-�
-⚡ Built with circuits, logic, and caffeine · Abhijith · Hardware × Software × AI ⚡
+![Visitor Count](https://komarev.com/ghpvc/?username=abhijith&color=00FFB3&style=for-the-badge&label=PROFILE+VIEWS)
+
+</div>
+
+---
+
+<div align="center">
+<sub>⚡ Built with circuits, logic, and caffeine · Abhijith · Hardware × Software × AI ⚡</sub>
+</div>
