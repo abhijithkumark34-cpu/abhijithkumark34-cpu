@@ -339,10 +339,10 @@ APPROACH:  Bottom-up engineering. Understand the electrons before the algorithm.
 
 | Channel | Link |
 |:---:|:---:|
-| ✉️ Email | [abhijith@email.com](mailto:abhijith@email.com) |
-| 💼 LinkedIn | [linkedin.com/in/abhijith](https://linkedin.com/in/abhijith) |
+| ✉️ Email | [abhijith@email.com](mailto:abhijithkumark34@gmail.com) |
+| 💼 LinkedIn | [linkedin.com/in/abhijith](https://www.linkedin.com/in/abhijith-kumar-eee) |
 | 🌐 Portfolio | [your-portfolio.dev](https://your-portfolio.dev) |
-| ⚡ GitHub | [github.com/abhijith](https://github.com/abhijith) |
+| ⚡ GitHub | [github.com/abhijith](https://github.com/abhijithkumark34-cpu) |
 
 <br/>
 
