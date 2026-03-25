@@ -29,7 +29,41 @@
 ---
 
 ## 🧠 About Me
-<!-- Code-style introduction -->
+## 🧠 About Me
+
+```javascript
+const abhijith = {
+  role: "Electronics + Software Engineer",
+  identity: "Bridge between Hardware, Analog Systems, and Software",
+
+  domains: [
+    "Digital Electronics",
+    "Analog Electronics",
+    "FPGA Design",
+    "Edge AI Systems",
+    "CPU Architecture",
+    "Low-Level Systems"
+  ],
+
+  languages: [
+    "C",
+    "Python",
+    "Verilog",
+    "VHDL (learning)"
+  ],
+
+  currentLearning: [
+    "Flip-Flops",
+    "FSM Design",
+    "RTL Design",
+    "Analog Circuit Fundamentals",
+    "Edge AI Integration"
+  ],
+
+  project: "Hybrid CPU (FPGA + Hardware ALU)",
+
+  vision: "Build intelligent systems from circuits → to AI at the edge"
+};
 
 ---
 
