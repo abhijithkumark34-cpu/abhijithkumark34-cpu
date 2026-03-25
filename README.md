@@ -64,8 +64,6 @@ const abhijith = {
   vision: "Build intelligent systems from circuits → to AI at the edge"
 };
 
----
-
 ## 🛠️ Tech Arsenal
 
 ### 💻 Programming
@@ -98,6 +96,11 @@ const abhijith = {
 ![Git](https://img.shields.io/badge/Git-VersionControl-black?style=for-the-badge)
 ![Linux](https://img.shields.io/badge/Linux-System-yellowgreen?style=for-the-badge)
 ![VS Code](https://img.shields.io/badge/VSCode-Editor-blue?style=for-the-badge)
+
+
+
+
+
 
 ### 💻 Programming
 <!-- C, Python -->
