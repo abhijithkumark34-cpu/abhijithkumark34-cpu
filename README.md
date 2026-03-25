@@ -107,14 +107,14 @@
   <polygon points="800,130 785,120 785,140" fill="white"/>
 
 </svg>
-```
+---
 
 <!-- Replace the block above with your custom SVG animation: -->
 <!-- <img src="./assets/circuit-animation.svg" width="800" alt="Circuit Animation"/> -->
 
 </div>
 
----
+
 
 <!-- CONNECT BUTTONS -->
 
