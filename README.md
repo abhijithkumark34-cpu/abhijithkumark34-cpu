@@ -1,4 +1,4 @@
-# ⚡ Abhijith
+#  Abhijith
 
 ### Bridging Software ↔ Hardware  
 ### Digital Electronics | FPGA | Verilog | C | Python  
@@ -15,8 +15,8 @@
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-Visit-purple?style=for-the-badge)](https://your-portfolio-link.com)
 [![Resume](https://img.shields.io/badge/Resume-View-blue?style=for-the-badge)](https://your-resume-link.com)
-[![Email](https://img.shields.io/badge/Email-Contact-red?style=for-the-badge)](mailto:yourmail@gmail.com)
-[![GitHub](https://img.shields.io/badge/GitHub-Profile-black?style=for-the-badge)](https://github.com/yourusername)
+[![Email](https://img.shields.io/badge/Email-Contact-red?style=for-the-badge)](mailto:abhijithkumark34@gmail.com)
+[![GitHub](https://img.shields.io/badge/GitHub-Profile-black?style=for-the-badge)](https://github.com/abhijithkumark34-cpu)
 
 ## ⚡ Animation
 <!-- Your electronics animation will go here -->
