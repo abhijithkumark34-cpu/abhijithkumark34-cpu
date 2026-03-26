@@ -25,22 +25,9 @@
 
 <div align="center">
 
-### ⚡ Current Flow Visualization
+### ⚡ Signal Flow Visualization
 
-```
-  VCC ──┬──────────────────────────────────────────────┐
-        │                                              │
-       [R]    ┌──[GATE]──┐    ┌──[ALU]──┐    ┌──[AI]──┐
-        │     │  Verilog │    │  CPU    │    │ Edge   │
-       GND    │  VHDL    │───▶│  Logic  │───▶│ Infer  │
-              └──────────┘    └─────────┘    └────────┘
-        ◀━━━━━━━━━━━━━━━ DATA BUS (32-bit) ━━━━━━━━━━━▶
-        ◀━━━━━━━━━━━━━━━ CONTROL SIGNALS ━━━━━━━━━━━━━▶
-              Transistor → Gate → CPU → System → AI
-```
-
-<!-- Replace the block above with your custom SVG animation: -->
-<!-- <img src="./assets/circuit-animation.svg" width="800" alt="Circuit Animation"/> -->
+<img src="./assets/circuit-animation.svg" width="900" alt="Circuit Signal Flow Animation"/>
 
 </div>
 
@@ -52,8 +39,8 @@
 
 [![Portfolio](https://img.shields.io/badge/🌐_Portfolio-0D1117?style=for-the-badge&logo=vercel&logoColor=00FFAA&labelColor=0D1117)](https://your-portfolio.dev)
 [![Resume](https://img.shields.io/badge/📄_Resume-0D1117?style=for-the-badge&logo=googledrive&logoColor=FF6B35&labelColor=0D1117)](https://your-resume-link.com)
-[![Email](https://img.shields.io/badge/✉️_Email-0D1117?style=for-the-badge&logo=gmail&logoColor=E040FB&labelColor=0D1117)](mailto:abhijith@email.com)
-[![GitHub](https://img.shields.io/badge/⚡_GitHub-0D1117?style=for-the-badge&logo=github&logoColor=00B4D8&labelColor=0D1117)](https://github.com/abhijith)
+[![Email](https://img.shields.io/badge/✉️_Email-0D1117?style=for-the-badge&logo=gmail&logoColor=E040FB&labelColor=0D1117)](mailto:abhijithkumark34@gmail.com)
+[![GitHub](https://img.shields.io/badge/⚡_GitHub-0D1117?style=for-the-badge&logo=github&logoColor=00B4D8&labelColor=0D1117)](https://github.com/abhijithkumark34-cpu)
 
 </div>
 
@@ -95,6 +82,12 @@ const Abhijith = {
     name      : "Hybrid CPU — FPGA + Hardware ALU",
     stack     : ["Verilog", "FPGA", "Custom ALU", "C"],
     goal      : "Full custom CPU implemented on FPGA with hardware arithmetic",
+  },
+
+  contact: {
+    email     : "abhijithkumark34@gmail.com",
+    linkedin  : "https://www.linkedin.com/in/abhijith-kumar-eee",
+    github    : "https://github.com/abhijithkumark34-cpu",
   },
 
   vision      : "Transistors → Logic Gates → CPU → Intelligent Edge Systems",
@@ -241,15 +234,15 @@ const Abhijith = {
 
 <div align="center">
 
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=abhijith&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00FFAA&icon_color=E040FB&text_color=C9D1D9&ring_color=00FFAA" />
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=abhijithkumark34-cpu&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00FFAA&icon_color=E040FB&text_color=C9D1D9&ring_color=00FFAA" />
 &nbsp;&nbsp;
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=abhijith&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00FFAA&text_color=C9D1D9&langs_count=8" />
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=abhijithkumark34-cpu&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00FFAA&text_color=C9D1D9&langs_count=8" />
 
 </div>
 
 <div align="center">
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=abhijith&theme=tokyonight&hide_border=true&background=0D1117&stroke=00FFAA&ring=E040FB&fire=FF6B35&currStreakLabel=00FFAA&sideLabels=C9D1D9&dates=8B949E" />
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=abhijithkumark34-cpu&theme=tokyonight&hide_border=true&background=0D1117&stroke=00FFAA&ring=E040FB&fire=FF6B35&currStreakLabel=00FFAA&sideLabels=C9D1D9&dates=8B949E" />
 
 </div>
 
@@ -339,16 +332,16 @@ APPROACH:  Bottom-up engineering. Understand the electrons before the algorithm.
 
 | Channel | Link |
 |:---:|:---:|
-| ✉️ Email | [abhijith@email.com](mailto:abhijithkumark34@gmail.com) |
-| 💼 LinkedIn | [linkedin.com/in/abhijith](https://www.linkedin.com/in/abhijith-kumar-eee) |
+| ✉️ Email | [abhijithkumark34@gmail.com](mailto:abhijithkumark34@gmail.com) |
+| 💼 LinkedIn | [linkedin.com/in/abhijith-kumar-eee](https://www.linkedin.com/in/abhijith-kumar-eee) |
 | 🌐 Portfolio | [your-portfolio.dev](https://your-portfolio.dev) |
-| ⚡ GitHub | [github.com/abhijith](https://github.com/abhijithkumark34-cpu) |
+| ⚡ GitHub | [github.com/abhijithkumark34-cpu](https://github.com/abhijithkumark34-cpu) |
 
 <br/>
 
-[![Email](https://img.shields.io/badge/Email_Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:abhijith@email.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/abhijith)
-[![Portfolio](https://img.shields.io/badge/Portfolio-0D1117?style=for-the-badge&logo=vercel&logoColor=00FFAA)](https://your-portfolio.dev)
+[![Email](https://img.shields.io/badge/Email_Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:abhijithkumark34@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/abhijith-kumar-eee)
+[![GitHub](https://img.shields.io/badge/GitHub-0D1117?style=for-the-badge&logo=github&logoColor=00B4D8)](https://github.com/abhijithkumark34-cpu)
 
 </div>
 
@@ -356,7 +349,7 @@ APPROACH:  Bottom-up engineering. Understand the electrons before the algorithm.
 
 <div align="center">
 
-<img src="https://komarev.com/ghpvc/?username=abhijith&color=00FFAA&style=for-the-badge&label=PROFILE+VIEWS" />
+<img src="https://komarev.com/ghpvc/?username=abhijithkumark34-cpu&color=00FFAA&style=for-the-badge&label=PROFILE+VIEWS" />
 
 <br/><br/>
 
