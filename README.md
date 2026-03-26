@@ -27,7 +27,7 @@
 
 ### ⚡ Current Flow Visualization
 
-```
+
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 260" width="900" height="260" style="background:#0D1117;border-radius:12px;">
   <defs>
     <!-- Glow filters -->
@@ -383,10 +383,7 @@
 
 </svg>
           
-```
 
-<!-- Replace the block above with your custom SVG animation: -->
-<!-- <img src="./assets/circuit-animation.svg" width="800" alt="Circuit Animation"/> -->
 
 </div>
 
