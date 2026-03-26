@@ -53,7 +53,7 @@
     </filter>
 
     <!-- Pulse animations along paths -->
-    <linearGradient id="wire1" x1="0%" y1="0%" x2="100%" y2="0%">
+  <linearGradient id="wire1" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#00FFAA" stop-opacity="0.1"/>
       <stop offset="50%" stop-color="#00FFAA" stop-opacity="0.8"/>
       <stop offset="100%" stop-color="#00FFAA" stop-opacity="0.1"/>
@@ -75,7 +75,7 @@
     </linearGradient>
 
     <!-- Data bus gradient -->
-    <linearGradient id="busGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+   <linearGradient id="busGrad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#00FFAA" stop-opacity="0.6"/>
       <stop offset="25%" stop-color="#FF6B35" stop-opacity="0.6"/>
       <stop offset="50%" stop-color="#E040FB" stop-opacity="0.6"/>
@@ -84,7 +84,7 @@
     </linearGradient>
 
     <!-- Clip path for pulse on wire -->
-    <clipPath id="clip1"><rect x="155" y="118" width="90" height="8"/></clipPath>
+  <clipPath id="clip1"><rect x="155" y="118" width="90" height="8"/></clipPath>
     <clipPath id="clip2"><rect x="315" y="118" width="90" height="8"/></clipPath>
     <clipPath id="clip3"><rect x="475" y="118" width="90" height="8"/></clipPath>
     <clipPath id="clip4"><rect x="635" y="118" width="90" height="8"/></clipPath>
