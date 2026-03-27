@@ -25,7 +25,7 @@
 
 <div align="center">
 
-### ⚡ Signal Flow Visualization
+###  Signal Flow Visualization
 
 <img src="circuit_animation.svg" width="900" alt="Circuit Signal Flow Animation"/>
 
@@ -91,7 +91,7 @@ const Abhijith = {
   },
 
   vision      : "Transistors → Logic Gates → CPU → Intelligent Edge Systems",
-  status      : "🟢 Actively building. Always learning.",
+  status      : "Actively building. Always learning.",
 };
 ```
 
@@ -105,14 +105,14 @@ const Abhijith = {
 
 <br/>
 
-**⚙️ Programming Languages**
+** Programming Languages**
 
 ![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=FFD43B)
 
 <br/>
 
-**🔲 Digital Design & HDL**
+** Digital Design & HDL**
 
 ![Verilog](https://img.shields.io/badge/Verilog-E040FB?style=for-the-badge&logo=v&logoColor=white&labelColor=1a0030)
 ![VHDL](https://img.shields.io/badge/VHDL-9C27B0?style=for-the-badge&logo=v&logoColor=white&labelColor=1a0030)
@@ -122,7 +122,7 @@ const Abhijith = {
 
 <br/>
 
-**🔌 Analog Electronics**
+** Analog Electronics**
 
 ![Op-Amps](https://img.shields.io/badge/Op--Amps-FF6B35?style=for-the-badge&logoColor=white&labelColor=1a0800)
 ![Filters](https://img.shields.io/badge/Active_Filters-E040FB?style=for-the-badge&logoColor=white&labelColor=1a0030)
@@ -131,7 +131,7 @@ const Abhijith = {
 
 <br/>
 
-**🤖 Edge AI & Embedded Intelligence**
+** Edge AI & Embedded Intelligence**
 
 ![TensorFlow Lite](https://img.shields.io/badge/TFLite-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
 ![Edge AI](https://img.shields.io/badge/Edge_AI-00B4D8?style=for-the-badge&logo=nvidia&logoColor=white&labelColor=001a20)
@@ -140,7 +140,7 @@ const Abhijith = {
 
 <br/>
 
-**🛠️ Tools & Environment**
+** Tools & Environment**
 
 ![ModelSim](https://img.shields.io/badge/ModelSim-1565C0?style=for-the-badge&logoColor=white&labelColor=001030)
 ![Vivado](https://img.shields.io/badge/Xilinx_Vivado-E040FB?style=for-the-badge&logo=xilinx&logoColor=white&labelColor=1a0030)
@@ -207,7 +207,7 @@ const Abhijith = {
 </td>
 <td width="50%" valign="top">
 
-### 🤖 Edge AI Inference — MCU Deployment
+###  Edge AI Inference — MCU Deployment
 > *Intelligence at the edge*
 
 - Lightweight neural network model quantized and deployed on embedded microcontroller
@@ -260,19 +260,19 @@ const Abhijith = {
 ┌─────────────────────────────────────────────────────────────────┐
 │                    THE ENGINEERING STACK                        │
 │                                                                 │
-│   ⚡ PHYSICS          Electrons, Holes, Semiconductor Materials │
+│    PHYSICS          Electrons, Holes, Semiconductor Materials │
 │        │                                                        │
-│   🔌 TRANSISTOR       MOSFET, BJT — Amplify, Switch, Control    │
+│    TRANSISTOR       MOSFET, BJT — Amplify, Switch, Control    │
 │        │                                                        │
-│   🔲 LOGIC GATE       AND, OR, NOT — Boolean Universe          │
+│    LOGIC GATE       AND, OR, NOT — Boolean Universe          │
 │        │                                                        │
-│   🏗️  DIGITAL CIRCUIT  Adders, Mux, Decoders, Flip-Flops       │
+│     DIGITAL CIRCUIT  Adders, Mux, Decoders, Flip-Flops       │
 │        │                                                        │
-│   ⚙️  CPU DATAPATH    ALU + Registers + Control Unit           │
+│     CPU DATAPATH    ALU + Registers + Control Unit           │
 │        │                                                        │
-│   💾 RTL / FPGA       Verilog → Synthesis → Silicon             │
+│    RTL / FPGA       Verilog → Synthesis → Silicon             │
 │        │                                                        │
-│   🤖 EDGE AI          On-device ML → Intelligence at the Edge  │
+│    EDGE AI          On-device ML → Intelligence at the Edge  │
 │                                                                 │
 │              [ I OPERATE AT EVERY LAYER ]                       │
 └─────────────────────────────────────────────────────────────────┘
@@ -298,11 +298,11 @@ const Abhijith = {
 
 | Target Domain | Focus Area | Status |
 |:---:|:---:|:---:|
-| 🏭 Semiconductor Industry | VLSI / RTL Design | 🟢 Pursuing |
-| ⚡ FPGA Engineering | Digital Systems | 🟢 Active |
-| 🤖 Edge AI Systems | Hardware-Accelerated ML | 🟡 Exploring |
-| 🔌 Analog IC Design | Mixed-Signal Systems | 🟡 Learning |
-| 🖥️ Low-Level Systems | Embedded + CPU Architecture | 🟢 Active |
+|  Semiconductor Industry | VLSI / RTL Design | 🟢 Pursuing |
+|  FPGA Engineering | Digital Systems | 🟢 Active |
+|  Edge AI Systems | Hardware-Accelerated ML | 🟡 Exploring |
+|  Analog IC Design | Mixed-Signal Systems | 🟡 Learning |
+|  Low-Level Systems | Embedded + CPU Architecture | 🟢 Active |
 
 </div>
 
@@ -354,7 +354,7 @@ APPROACH:  Bottom-up engineering. Understand the electrons before the algorithm.
 <br/><br/>
 
 ```
-⚡  Abhijith  |  Hardware × Software  |  Building from the ground up  ⚡
+  Abhijith  |  Hardware × programing  |  Building from the ground up  
    Transistors → Gates → CPU → Systems → Edge AI → The Future
 ```
 
