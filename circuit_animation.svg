@@ -1,79 +1,328 @@
-<!-- Save as: animated-current-flow.svg -->
-<svg width="900" height="260" viewBox="0 0 900 260" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 260" width="900" height="260">
+<defs>
+  <filter id="gs" x="-35%" y="-35%" width="170%" height="170%">
+    <feGaussianBlur in="SourceGraphic" stdDeviation="2.5" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="gm" x="-70%" y="-70%" width="240%" height="240%">
+    <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="gl" x="-120%" y="-120%" width="340%" height="340%">
+    <feGaussianBlur in="SourceGraphic" stdDeviation="9" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <pattern id="scan" x="0" y="0" width="900" height="4" patternUnits="userSpaceOnUse">
+    <line x1="0" y1="0" x2="900" y2="0" stroke="#FFFFFF" stroke-width="0.5" opacity="0.025"/>
+  </pattern>
+</defs>
 
-  <!-- Background -->
-  <rect width="100%" height="100%" fill="#0d1117"/>
+<!-- Background -->
+<rect width="900" height="260" fill="#0D1117"/>
+<rect width="900" height="260" fill="url(#scan)"/>
 
-  <!-- Glow effect -->
-  <defs>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="3" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-  </defs>
+<!-- Header -->
+<text x="450" y="20" text-anchor="middle"
+  font-family="'Courier New', Courier, monospace" font-size="9"
+  fill="#FFFFFF" opacity="0.28" letter-spacing="5">
+  CIRCUIT EVOLUTION — MOSFET  ›  GATE  ›  ADDER  ›  ALU  ›  CPU
+</text>
 
-  <!-- TITLE -->
-  <text x="450" y="30" text-anchor="middle" fill="cyan" font-size="18">
-    ⚡ Current Flow Visualization
-  </text>
+<!-- Footer -->
+<text x="450" y="250" text-anchor="middle"
+  font-family="'Courier New', Courier, monospace" font-size="8"
+  fill="#FFFFFF" opacity="0.15" letter-spacing="3">DIGITAL ABSTRACTION LAYERS</text>
 
-  <!-- MAIN PATH -->
-  <path id="dataPath" d="M100,130 L800,130" fill="none"/>
+<!-- "SYSTEM INITIALIZED" appears after CPU -->
+<text x="450" y="237" text-anchor="middle"
+  font-family="'Courier New', Courier, monospace" font-size="9"
+  fill="#FFD54F" opacity="0" letter-spacing="4">
+  ✦  SYSTEM INITIALIZED  ✦
+  <animate attributeName="opacity" from="0" to="0.55" begin="6.8s" dur="0.8s" fill="freeze"/>
+</text>
 
-  <!-- WIRE -->
-  <line x1="100" y1="130" x2="800" y2="130" stroke="white" stroke-width="2"/>
+<!-- ═══════════════════════════ -->
+<!--   WIRE + SIGNAL LAYER      -->
+<!-- ═══════════════════════════ -->
 
-  <!-- BLOCKS -->
-  <!-- GATE -->
-  <rect x="200" y="100" width="100" height="60" fill="none" stroke="cyan"/>
-  <text x="250" y="135" text-anchor="middle" fill="cyan">GATE</text>
+<!-- Glow backing layer of wire -->
+<line x1="20" y1="130" x2="880" y2="130"
+  stroke="#00BFFF" stroke-width="4" opacity="0"
+  filter="url(#gm)">
+  <animate attributeName="opacity" from="0" to="0.12" begin="1.7s" dur="0.4s" fill="freeze"/>
+</line>
 
-  <!-- ALU -->
-  <rect x="400" y="100" width="100" height="60" fill="none" stroke="orange"/>
-  <text x="450" y="135" text-anchor="middle" fill="orange">ALU</text>
+<!-- Main wire draw-on animation -->
+<line x1="20" y1="130" x2="880" y2="130"
+  stroke="#00E5FF" stroke-width="1.5" opacity="0"
+  stroke-dasharray="860 860" stroke-dashoffset="860"
+  filter="url(#gs)">
+  <animate attributeName="stroke-dashoffset" from="860" to="0"
+    dur="1.4s" begin="0.3s" fill="freeze" calcMode="spline"
+    keySplines="0.4 0 0.2 1"/>
+  <animate attributeName="opacity" from="0" to="0.85" begin="0.3s" dur="0.15s" fill="freeze"/>
+</line>
 
-  <!-- AI -->
-  <rect x="600" y="100" width="100" height="60" fill="none" stroke="lime"/>
-  <text x="650" y="135" text-anchor="middle" fill="lime">AI</text>
+<!-- Animated dashed signal flow -->
+<line x1="20" y1="130" x2="880" y2="130"
+  stroke="#00FFFF" stroke-width="0.9"
+  stroke-dasharray="10 22" opacity="0">
+  <animate attributeName="stroke-dashoffset" from="0" to="-128"
+    dur="1.1s" begin="0s" repeatCount="indefinite"/>
+  <animate attributeName="opacity" from="0" to="0.38" begin="1.7s" dur="0.5s" fill="freeze"/>
+</line>
 
-  <!-- ELECTRONS (DATA FLOW) -->
-  <circle r="5" fill="cyan" filter="url(#glow)">
-    <animateMotion dur="3s" repeatCount="indefinite">
-      <mpath href="#dataPath"/>
-    </animateMotion>
-  </circle>
+<!-- Blinking cursor at wire tail -->
+<rect x="877" y="124" width="5" height="12" rx="1" fill="#00E5FF" opacity="0">
+  <animate attributeName="opacity" values="0.75;0.1;0.75;0.1;0.75;0"
+    keyTimes="0;0.35;0.5;0.65;0.8;1"
+    dur="1.2s" begin="1.75s" repeatCount="indefinite"/>
+</rect>
 
-  <circle r="5" fill="cyan" filter="url(#glow)">
-    <animateMotion dur="3s" begin="0.8s" repeatCount="indefinite">
-      <mpath href="#dataPath"/>
-    </animateMotion>
-  </circle>
+<!-- ═══════════════════════════════════════════ -->
+<!-- STAGE 01 — MOSFET  (x=45–100, cyan)        -->
+<!-- ═══════════════════════════════════════════ -->
+<g opacity="0">
+  <animate attributeName="opacity" from="0" to="1" begin="2.2s" dur="0.65s" fill="freeze"/>
 
-  <circle r="5" fill="cyan" filter="url(#glow)">
-    <animateMotion dur="3s" begin="1.6s" repeatCount="indefinite">
-      <mpath href="#dataPath"/>
-    </animateMotion>
-  </circle>
+  <!-- Box -->
+  <rect x="45" y="105" width="55" height="50" rx="3"
+    fill="#011820" stroke="#00E5FF" stroke-width="1.5" filter="url(#gs)"/>
 
-  <!-- CONTROL SIGNAL (reverse direction) -->
-  <path id="controlPath" d="M800,170 L100,170" fill="none"/>
+  <!-- MOSFET schematic: gate bar -->
+  <line x1="60" y1="113" x2="60" y2="147" stroke="#00E5FF" stroke-width="1.5" opacity="0.65"/>
+  <!-- Three gate electrode stubs -->
+  <line x1="62" y1="117" x2="68" y2="117" stroke="#00E5FF" stroke-width="1.5"/>
+  <line x1="62" y1="130" x2="68" y2="130" stroke="#00E5FF" stroke-width="1.5"/>
+  <line x1="62" y1="143" x2="68" y2="143" stroke="#00E5FF" stroke-width="1.5"/>
+  <!-- Channel bar -->
+  <line x1="68" y1="113" x2="68" y2="147" stroke="#00E5FF" stroke-width="2"/>
+  <!-- Drain -->
+  <line x1="68" y1="117" x2="81" y2="112" stroke="#00E5FF" stroke-width="1.5"/>
+  <!-- Source -->
+  <line x1="68" y1="143" x2="81" y2="148" stroke="#00E5FF" stroke-width="1.5"/>
+  <!-- Arrow (n-channel) -->
+  <polygon points="66,127 61,130.5 66,134" fill="#00E5FF"/>
 
-  <line x1="100" y1="170" x2="800" y2="170" stroke="gray" stroke-dasharray="6,4"/>
+  <!-- Wire junction dots -->
+  <circle cx="45" cy="130" r="2.5" fill="#00E5FF" filter="url(#gs)"/>
+  <circle cx="100" cy="130" r="2.5" fill="#00E5FF" filter="url(#gs)"/>
 
-  <circle r="4" fill="magenta">
-    <animateMotion dur="4s" repeatCount="indefinite">
-      <mpath href="#controlPath"/>
-    </animateMotion>
-  </circle>
+  <!-- Labels -->
+  <text x="72" y="168" text-anchor="middle"
+    font-family="'Courier New', Courier, monospace" font-size="9"
+    fill="#00E5FF" opacity="0.85">MOSFET</text>
+  <text x="72" y="97" text-anchor="middle"
+    font-family="'Courier New', Courier, monospace" font-size="8"
+    fill="#00E5FF" opacity="0.45">01</text>
+</g>
 
-  <!-- LABELS -->
-  <text x="450" y="90" text-anchor="middle" fill="white">DATA FLOW</text>
-  <text x="450" y="200" text-anchor="middle" fill="gray">CONTROL SIGNALS</text>
+<!-- ═══════════════════════════════════════════ -->
+<!-- STAGE 02 — LOGIC GATE  (x=165–230, purple) -->
+<!-- ═══════════════════════════════════════════ -->
+<g opacity="0">
+  <animate attributeName="opacity" from="0" to="1" begin="3s" dur="0.65s" fill="freeze"/>
 
-  <!-- ARROW -->
-  <polygon points="800,130 785,120 785,140" fill="white"/>
+  <rect x="165" y="105" width="65" height="50" rx="3"
+    fill="#0A0118" stroke="#BF5FFF" stroke-width="1.5" filter="url(#gs)"/>
+
+  <!-- Input stub lines -->
+  <line x1="165" y1="120" x2="175" y2="120" stroke="#BF5FFF" stroke-width="1" opacity="0.45"/>
+  <line x1="165" y1="140" x2="175" y2="140" stroke="#BF5FFF" stroke-width="1" opacity="0.45"/>
+  <!-- Output stub -->
+  <line x1="220" y1="130" x2="230" y2="130" stroke="#BF5FFF" stroke-width="1" opacity="0.45"/>
+
+  <!-- AND symbol -->
+  <text x="197" y="126" text-anchor="middle"
+    font-family="'Courier New', Courier, monospace" font-size="16"
+    fill="#BF5FFF" font-weight="bold">&amp;</text>
+  <text x="197" y="141" text-anchor="middle"
+    font-family="'Courier New', Courier, monospace" font-size="9"
+    fill="#BF5FFF">AND</text>
+  <text x="197" y="151" text-anchor="middle"
+    font-family="'Courier New', Courier, monospace" font-size="7"
+    fill="#BF5FFF" opacity="0.55">GATE</text>
+
+  <circle cx="165" cy="130" r="2.5" fill="#BF5FFF" filter="url(#gs)"/>
+  <circle cx="230" cy="130" r="2.5" fill="#BF5FFF" filter="url(#gs)"/>
+
+  <text x="197" y="168" text-anchor="middle"
+    font-family="'Courier New', Courier, monospace" font-size="9"
+    fill="#BF5FFF" opacity="0.85">LOGIC</text>
+  <text x="197" y="97" text-anchor="middle"
+    font-family="'Courier New', Courier, monospace" font-size="8"
+    fill="#BF5FFF" opacity="0.45">02</text>
+</g>
+
+<!-- ═══════════════════════════════════════════ -->
+<!-- STAGE 03 — ADDER  (x=300–385, orange)      -->
+<!-- ═══════════════════════════════════════════ -->
+<g opacity="0">
+  <animate attributeName="opacity" from="0" to="1" begin="3.8s" dur="0.65s" fill="freeze"/>
+
+  <rect x="300" y="100" width="85" height="60" rx="3"
+    fill="#100800" stroke="#FF8C42" stroke-width="1.5" filter="url(#gs)"/>
+
+  <!-- Internal sub-blocks (HA + FA) -->
+  <rect x="307" y="107" width="30" height="18" rx="2"
+    fill="none" stroke="#FF8C42" stroke-width="0.7" opacity="0.5"/>
+  <text x="322" y="119" text-anchor="middle"
+    font-family="'Courier New', Courier, monospace" font-size="6"
+    fill="#FF8C42" opacity="0.7">HA</text>
+
+  <rect x="341" y="107" width="36" height="18" rx="2"
+    fill="none" stroke="#FF8C42" stroke-width="0.7" opacity="0.5"/>
+  <text x="359" y="119" text-anchor="middle"
+    font-family="'Courier New', Courier, monospace" font-size="6"
+    fill="#FF8C42" opacity="0.7">FA</text>
+
+  <!-- Plus sign -->
+  <text x="342" y="145" text-anchor="middle"
+    font-family="'Courier New', Courier, monospace" font-size="17"
+    fill="#FF8C42" font-weight="bold">+</text>
+  <text x="342" y="155" text-anchor="middle"
+    font-family="'Courier New', Courier, monospace" font-size="7"
+    fill="#FF8C42" opacity="0.6">ADDER</text>
+
+  <circle cx="300" cy="130" r="2.5" fill="#FF8C42" filter="url(#gs)"/>
+  <circle cx="385" cy="130" r="2.5" fill="#FF8C42" filter="url(#gs)"/>
+
+  <text x="342" y="174" text-anchor="middle"
+    font-family="'Courier New', Courier, monospace" font-size="9"
+    fill="#FF8C42" opacity="0.85">COMBINATIONAL</text>
+  <text x="342" y="91" text-anchor="middle"
+    font-family="'Courier New', Courier, monospace" font-size="8"
+    fill="#FF8C42" opacity="0.45">03</text>
+</g>
+
+<!-- ═══════════════════════════════════════════ -->
+<!-- STAGE 04 — ALU  (x=455–560, pink/red)      -->
+<!-- ═══════════════════════════════════════════ -->
+<g opacity="0">
+  <animate attributeName="opacity" from="0" to="1" begin="4.6s" dur="0.65s" fill="freeze"/>
+
+  <rect x="455" y="95" width="105" height="70" rx="3"
+    fill="#100010" stroke="#FF4081" stroke-width="1.5" filter="url(#gs)"/>
+
+  <!-- Internal function blocks -->
+  <rect x="463" y="102" width="38" height="20" rx="2"
+    fill="none" stroke="#FF4081" stroke-width="0.7" opacity="0.5"/>
+  <text x="482" y="115" text-anchor="middle"
+    font-family="'Courier New', Courier, monospace" font-size="6"
+    fill="#FF4081" opacity="0.7">ADD/SUB</text>
+
+  <rect x="505" y="102" width="47" height="20" rx="2"
+    fill="none" stroke="#FF4081" stroke-width="0.7" opacity="0.5"/>
+  <text x="528" y="115" text-anchor="middle"
+    font-family="'Courier New', Courier, monospace" font-size="6"
+    fill="#FF4081" opacity="0.7">SHIFT/AND</text>
+
+  <!-- ALU label -->
+  <text x="507" y="143" text-anchor="middle"
+    font-family="'Courier New', Courier, monospace" font-size="17"
+    fill="#FF4081" font-weight="bold">ALU</text>
+  <text x="507" y="157" text-anchor="middle"
+    font-family="'Courier New', Courier, monospace" font-size="7"
+    fill="#FF4081" opacity="0.6">&#xB1; &amp; | ^ &lt;&lt; &gt;&gt;</text>
+
+  <circle cx="455" cy="130" r="2.5" fill="#FF4081" filter="url(#gs)"/>
+  <circle cx="560" cy="130" r="2.5" fill="#FF4081" filter="url(#gs)"/>
+
+  <text x="507" y="178" text-anchor="middle"
+    font-family="'Courier New', Courier, monospace" font-size="9"
+    fill="#FF4081" opacity="0.85">ARITHMETIC</text>
+  <text x="507" y="86" text-anchor="middle"
+    font-family="'Courier New', Courier, monospace" font-size="8"
+    fill="#FF4081" opacity="0.45">04</text>
+</g>
+
+<!-- ═══════════════════════════════════════════ -->
+<!-- STAGE 05 — CPU  (x=625–775, gold/amber)    -->
+<!-- ═══════════════════════════════════════════ -->
+<g opacity="0">
+  <animate attributeName="opacity" from="0" to="1" begin="5.5s" dur="0.9s" fill="freeze"/>
+
+  <!-- Outer glow pulse on CPU (repeating) -->
+  <rect x="625" y="88" width="150" height="84" rx="4"
+    fill="none" stroke="#FFD54F" stroke-width="3" opacity="0" filter="url(#gm)">
+    <animate attributeName="opacity" values="0;0.25;0" dur="2s" begin="6.4s" repeatCount="indefinite"/>
+  </rect>
+
+  <rect x="625" y="88" width="150" height="84" rx="4"
+    fill="#0F0B00" stroke="#FFD54F" stroke-width="2" filter="url(#gs)"/>
+
+  <!-- Pipeline stage boxes: IF · ID · EX · WB -->
+  <rect x="633" y="96" width="30" height="22" rx="2"
+    fill="none" stroke="#FFD54F" stroke-width="0.8" opacity="0.6"/>
+  <text x="648" y="110" text-anchor="middle"
+    font-family="'Courier New', Courier, monospace" font-size="6"
+    fill="#FFD54F" opacity="0.8">IF</text>
+
+  <rect x="667" y="96" width="30" height="22" rx="2"
+    fill="none" stroke="#FFD54F" stroke-width="0.8" opacity="0.6"/>
+  <text x="682" y="110" text-anchor="middle"
+    font-family="'Courier New', Courier, monospace" font-size="6"
+    fill="#FFD54F" opacity="0.8">ID</text>
+
+  <rect x="701" y="96" width="30" height="22" rx="2"
+    fill="none" stroke="#FFD54F" stroke-width="0.8" opacity="0.6"/>
+  <text x="716" y="110" text-anchor="middle"
+    font-family="'Courier New', Courier, monospace" font-size="6"
+    fill="#FFD54F" opacity="0.8">EX</text>
+
+  <rect x="735" y="96" width="32" height="22" rx="2"
+    fill="none" stroke="#FFD54F" stroke-width="0.8" opacity="0.6"/>
+  <text x="751" y="110" text-anchor="middle"
+    font-family="'Courier New', Courier, monospace" font-size="6"
+    fill="#FFD54F" opacity="0.8">WB</text>
+
+  <!-- Pipeline arrows -->
+  <text x="661" y="110" font-family="'Courier New', Courier, monospace"
+    font-size="7" fill="#FFD54F" opacity="0.4">›</text>
+  <text x="695" y="110" font-family="'Courier New', Courier, monospace"
+    font-size="7" fill="#FFD54F" opacity="0.4">›</text>
+  <text x="729" y="110" font-family="'Courier New', Courier, monospace"
+    font-size="7" fill="#FFD54F" opacity="0.4">›</text>
+
+  <!-- CPU main label -->
+  <text x="700" y="149" text-anchor="middle"
+    font-family="'Courier New', Courier, monospace" font-size="22"
+    fill="#FFD54F" font-weight="bold">CPU</text>
+  <text x="700" y="164" text-anchor="middle"
+    font-family="'Courier New', Courier, monospace" font-size="7"
+    fill="#FFD54F" opacity="0.65">RISC-V · 5-STAGE PIPELINE</text>
+
+  <circle cx="625" cy="130" r="3" fill="#FFD54F" filter="url(#gs)"/>
+  <circle cx="775" cy="130" r="3" fill="#FFD54F" filter="url(#gs)"/>
+
+  <text x="700" y="186" text-anchor="middle"
+    font-family="'Courier New', Courier, monospace" font-size="9"
+    fill="#FFD54F" opacity="0.85">PROCESSOR</text>
+  <text x="700" y="79" text-anchor="middle"
+    font-family="'Courier New', Courier, monospace" font-size="8"
+    fill="#FFD54F" opacity="0.45">05</text>
+</g>
+
+<!-- ═══════════════════════════════════════════ -->
+<!--  SIGNAL PULSE — drawn last (always on top) -->
+<!-- ═══════════════════════════════════════════ -->
+
+<!-- Soft glow halo -->
+<circle r="8" cy="130" fill="#00BFFF" filter="url(#gl)" opacity="0">
+  <animate attributeName="cx" from="20" to="880" dur="2.6s" begin="1.7s" repeatCount="indefinite" calcMode="linear"/>
+  <animate attributeName="opacity" values="0;0.25;0.25;0" keyTimes="0;0.04;0.96;1" dur="2.6s" begin="1.7s" repeatCount="indefinite"/>
+</circle>
+
+<!-- Trailing dot -->
+<circle r="2.5" cy="130" fill="#00E5FF" filter="url(#gm)" opacity="0">
+  <animate attributeName="cx" from="20" to="880" dur="2.6s" begin="1.82s" repeatCount="indefinite" calcMode="linear"/>
+  <animate attributeName="opacity" values="0;0.5;0.5;0" keyTimes="0;0.04;0.96;1" dur="2.6s" begin="1.82s" repeatCount="indefinite"/>
+</circle>
+
+<!-- Core pulse dot -->
+<circle r="4.5" cy="130" fill="#FFFFFF" filter="url(#gm)" opacity="0">
+  <animate attributeName="cx" from="20" to="880" dur="2.6s" begin="1.7s" repeatCount="indefinite" calcMode="linear"/>
+  <animate attributeName="opacity" values="0;0.95;0.95;0" keyTimes="0;0.04;0.96;1" dur="2.6s" begin="1.7s" repeatCount="indefinite"/>
+</circle>
 
 </svg>
