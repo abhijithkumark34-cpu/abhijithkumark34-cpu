@@ -25,365 +25,9 @@
 
 <div align="center">
 
-### ⚡ Current Flow Visualization
+### ⚡ Signal Flow Visualization
 
-
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 260" width="900" height="260" style="background:#0D1117;border-radius:12px;">
-  <defs>
-    <!-- Glow filters -->
-    <filter id="glow-green" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
-      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-    <filter id="glow-orange" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
-      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-    <filter id="glow-purple" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
-      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-    <filter id="glow-blue" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
-      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-    <filter id="box-glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="5" result="coloredBlur"/>
-      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-
-    <!-- Pulse animations along paths -->
-  <linearGradient id="wire1" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00FFAA" stop-opacity="0.1"/>
-      <stop offset="50%" stop-color="#00FFAA" stop-opacity="0.8"/>
-      <stop offset="100%" stop-color="#00FFAA" stop-opacity="0.1"/>
-    </linearGradient>
-    <linearGradient id="wire2" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#FF6B35" stop-opacity="0.1"/>
-      <stop offset="50%" stop-color="#FF6B35" stop-opacity="0.8"/>
-      <stop offset="100%" stop-color="#FF6B35" stop-opacity="0.1"/>
-    </linearGradient>
-    <linearGradient id="wire3" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#E040FB" stop-opacity="0.1"/>
-      <stop offset="50%" stop-color="#E040FB" stop-opacity="0.8"/>
-      <stop offset="100%" stop-color="#E040FB" stop-opacity="0.1"/>
-    </linearGradient>
-    <linearGradient id="wire4" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00B4D8" stop-opacity="0.1"/>
-      <stop offset="50%" stop-color="#00B4D8" stop-opacity="0.8"/>
-      <stop offset="100%" stop-color="#00B4D8" stop-opacity="0.1"/>
-    </linearGradient>
-
-    <!-- Data bus gradient -->
-   <linearGradient id="busGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00FFAA" stop-opacity="0.6"/>
-      <stop offset="25%" stop-color="#FF6B35" stop-opacity="0.6"/>
-      <stop offset="50%" stop-color="#E040FB" stop-opacity="0.6"/>
-      <stop offset="75%" stop-color="#00B4D8" stop-opacity="0.6"/>
-      <stop offset="100%" stop-color="#00FFAA" stop-opacity="0.6"/>
-    </linearGradient>
-
-    <!-- Clip path for pulse on wire -->
-  <clipPath id="clip1"><rect x="155" y="118" width="90" height="8"/></clipPath>
-    <clipPath id="clip2"><rect x="315" y="118" width="90" height="8"/></clipPath>
-    <clipPath id="clip3"><rect x="475" y="118" width="90" height="8"/></clipPath>
-    <clipPath id="clip4"><rect x="635" y="118" width="90" height="8"/></clipPath>
-  </defs>
-
-  <!-- Background grid lines (subtle) -->
-  <g opacity="0.05" stroke="#00FFAA" stroke-width="0.5">
-    <line x1="0" y1="40" x2="900" y2="40"/>
-    <line x1="0" y1="80" x2="900" y2="80"/>
-    <line x1="0" y1="120" x2="900" y2="120"/>
-    <line x1="0" y1="160" x2="900" y2="160"/>
-    <line x1="0" y1="200" x2="900" y2="200"/>
-    <line x1="100" y1="0" x2="100" y2="260"/>
-    <line x1="200" y1="0" x2="200" y2="260"/>
-    <line x1="300" y1="0" x2="300" y2="260"/>
-    <line x1="400" y1="0" x2="400" y2="260"/>
-    <line x1="500" y1="0" x2="500" y2="260"/>
-    <line x1="600" y1="0" x2="600" y2="260"/>
-    <line x1="700" y1="0" x2="700" y2="260"/>
-    <line x1="800" y1="0" x2="800" y2="260"/>
-  </g>
-
-  <!-- VCC rail at top -->
-  <line x1="50" y1="25" x2="850" y2="25" stroke="#00FFAA" stroke-width="1.5" stroke-dasharray="6,3" opacity="0.5"/>
-  <text x="22" y="29" fill="#00FFAA" font-size="9" font-family="monospace" opacity="0.8">VCC</text>
-  <line x1="50" y1="235" x2="850" y2="235" stroke="#FF4444" stroke-width="1.5" stroke-dasharray="6,3" opacity="0.4"/>
-  <text x="22" y="239" fill="#FF4444" font-size="9" font-family="monospace" opacity="0.7">GND</text>
-
-  <!-- VCC drop lines -->
-  <line x1="90" y1="25" x2="90" y2="50" stroke="#00FFAA" stroke-width="1" opacity="0.5"/>
-  <line x1="250" y1="25" x2="250" y2="50" stroke="#FF6B35" stroke-width="1" opacity="0.5"/>
-  <line x1="410" y1="25" x2="410" y2="50" stroke="#E040FB" stroke-width="1" opacity="0.5"/>
-  <line x1="570" y1="25" x2="570" y2="50" stroke="#00B4D8" stroke-width="1" opacity="0.5"/>
-  <line x1="730" y1="25" x2="730" y2="50" stroke="#00FFAA" stroke-width="1" opacity="0.5"/>
-
-  <!-- GND drop lines -->
-  <line x1="90" y1="210" x2="90" y2="235" stroke="#00FFAA" stroke-width="1" opacity="0.4"/>
-  <line x1="250" y1="210" x2="250" y2="235" stroke="#FF6B35" stroke-width="1" opacity="0.4"/>
-  <line x1="410" y1="210" x2="410" y2="235" stroke="#E040FB" stroke-width="1" opacity="0.4"/>
-  <line x1="570" y1="210" x2="570" y2="235" stroke="#00B4D8" stroke-width="1" opacity="0.4"/>
-  <line x1="730" y1="210" x2="730" y2="235" stroke="#00FFAA" stroke-width="1" opacity="0.4"/>
-
-  <!-- ===== NODE BOXES ===== -->
-
-  <!-- Box 1: TRANSISTOR -->
-  <rect x="35" y="50" width="110" height="160" rx="8" fill="#0A1628" stroke="#00FFAA" stroke-width="1.5" filter="url(#box-glow)">
-    <animate attributeName="stroke-opacity" values="0.6;1;0.6" dur="2s" repeatCount="indefinite"/>
-  </rect>
-  <text x="90" y="80" text-anchor="middle" fill="#00FFAA" font-size="9" font-family="monospace" font-weight="bold" filter="url(#glow-green)">⚡ TRANSISTOR</text>
-  <line x1="55" y1="88" x2="125" y2="88" stroke="#00FFAA" stroke-width="0.5" opacity="0.4"/>
-  <!-- MOSFET symbol -->
-  <line x1="90" y1="100" x2="90" y2="150" stroke="#00FFAA" stroke-width="1.5" opacity="0.8"/>
-  <line x1="90" y1="110" x2="75" y2="110" stroke="#00FFAA" stroke-width="1.5" opacity="0.8"/>
-  <line x1="75" y1="100" x2="75" y2="155" stroke="#00FFAA" stroke-width="2" opacity="0.9"/>
-  <line x1="75" y1="107" x2="67" y2="107" stroke="#00FFAA" stroke-width="1.5" opacity="0.9"/>
-  <circle cx="67" cy="107" r="2" fill="#00FFAA" opacity="0.9"/>
-  <line x1="90" y1="130" x2="75" y2="130" stroke="#00FFAA" stroke-width="1.5" opacity="0.8"/>
-  <!-- Gate pulse animation -->
-  <circle cx="67" cy="107" r="5" fill="none" stroke="#00FFAA" stroke-width="1" opacity="0">
-    <animate attributeName="r" values="2;12;2" dur="2.5s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0.9;0;0.9" dur="2.5s" repeatCount="indefinite"/>
-  </circle>
-  <text x="90" y="172" text-anchor="middle" fill="#00FFAA" font-size="7.5" font-family="monospace" opacity="0.7">MOSFET/BJT</text>
-  <text x="90" y="184" text-anchor="middle" fill="#00FFAA" font-size="7.5" font-family="monospace" opacity="0.7">Switch · Amplify</text>
-  <text x="90" y="200" text-anchor="middle" fill="#00FFAA" font-size="7.5" font-family="monospace" opacity="0.5">Vgs · Id · Vth</text>
-
-  <!-- Wire 1: TRANSISTOR → GATE -->
-  <line x1="145" y1="130" x2="195" y2="130" stroke="#00FFAA" stroke-width="2" opacity="0.3"/>
-  <!-- Pulse dot 1 -->
-  <circle cx="145" cy="130" r="4" fill="#00FFAA" opacity="0.9" filter="url(#glow-green)">
-    <animate attributeName="cx" values="145;195;195" dur="2s" repeatCount="indefinite" begin="0s"/>
-    <animate attributeName="opacity" values="1;1;0" dur="2s" repeatCount="indefinite" begin="0s"/>
-  </circle>
-  <circle cx="145" cy="130" r="4" fill="#00FFAA" opacity="0.9" filter="url(#glow-green)">
-    <animate attributeName="cx" values="145;195;195" dur="2s" repeatCount="indefinite" begin="0.5s"/>
-    <animate attributeName="opacity" values="1;1;0" dur="2s" repeatCount="indefinite" begin="0.5s"/>
-  </circle>
-  <!-- Arrow -->
-  <polygon points="193,125 205,130 193,135" fill="#00FFAA" opacity="0.7"/>
-
-  <!-- Box 2: LOGIC GATE -->
-  <rect x="195" y="50" width="110" height="160" rx="8" fill="#0A1628" stroke="#FF6B35" stroke-width="1.5" filter="url(#box-glow)">
-    <animate attributeName="stroke-opacity" values="0.6;1;0.6" dur="2.5s" repeatCount="indefinite" begin="0.4s"/>
-  </rect>
-  <text x="250" y="80" text-anchor="middle" fill="#FF6B35" font-size="9" font-family="monospace" font-weight="bold" filter="url(#glow-orange)">🔲 LOGIC GATE</text>
-  <line x1="215" y1="88" x2="285" y2="88" stroke="#FF6B35" stroke-width="0.5" opacity="0.4"/>
-  <!-- AND gate symbol -->
-  <path d="M220 108 L220 148 L245 148 Q268 148 268 128 Q268 108 245 108 Z" fill="none" stroke="#FF6B35" stroke-width="1.8" opacity="0.85"/>
-  <line x1="210" y1="118" x2="220" y2="118" stroke="#FF6B35" stroke-width="1.5" opacity="0.8"/>
-  <line x1="210" y1="138" x2="220" y2="138" stroke="#FF6B35" stroke-width="1.5" opacity="0.8"/>
-  <line x1="268" y1="128" x2="280" y2="128" stroke="#FF6B35" stroke-width="1.5" opacity="0.8"/>
-  <!-- Flicker animation on output -->
-  <circle cx="280" cy="128" r="3" fill="#FF6B35">
-    <animate attributeName="opacity" values="1;0.2;1;0.2;1" dur="1.8s" repeatCount="indefinite" begin="0.3s"/>
-  </circle>
-  <text x="250" y="172" text-anchor="middle" fill="#FF6B35" font-size="7.5" font-family="monospace" opacity="0.7">Verilog · VHDL</text>
-  <text x="250" y="184" text-anchor="middle" fill="#FF6B35" font-size="7.5" font-family="monospace" opacity="0.7">AND·OR·NOT·XOR</text>
-  <text x="250" y="200" text-anchor="middle" fill="#FF6B35" font-size="7.5" font-family="monospace" opacity="0.5">Boolean Logic</text>
-
-  <!-- Wire 2: GATE → CPU -->
-  <line x1="305" y1="130" x2="355" y2="130" stroke="#FF6B35" stroke-width="2" opacity="0.3"/>
-  <circle cx="305" cy="130" r="4" fill="#FF6B35" opacity="0.9" filter="url(#glow-orange)">
-    <animate attributeName="cx" values="305;355;355" dur="2s" repeatCount="indefinite" begin="0.6s"/>
-    <animate attributeName="opacity" values="1;1;0" dur="2s" repeatCount="indefinite" begin="0.6s"/>
-  </circle>
-  <circle cx="305" cy="130" r="4" fill="#FF6B35" opacity="0.9" filter="url(#glow-orange)">
-    <animate attributeName="cx" values="305;355;355" dur="2s" repeatCount="indefinite" begin="1.1s"/>
-    <animate attributeName="opacity" values="1;1;0" dur="2s" repeatCount="indefinite" begin="1.1s"/>
-  </circle>
-  <polygon points="353,125 365,130 353,135" fill="#FF6B35" opacity="0.7"/>
-
-  <!-- Box 3: CPU / ALU -->
-  <rect x="355" y="50" width="110" height="160" rx="8" fill="#0A1628" stroke="#E040FB" stroke-width="1.5" filter="url(#box-glow)">
-    <animate attributeName="stroke-opacity" values="0.6;1;0.6" dur="1.8s" repeatCount="indefinite" begin="0.8s"/>
-  </rect>
-  <text x="410" y="72" text-anchor="middle" fill="#E040FB" font-size="9" font-family="monospace" font-weight="bold" filter="url(#glow-purple)">⚙️  CPU / ALU</text>
-  <line x1="375" y1="80" x2="445" y2="80" stroke="#E040FB" stroke-width="0.5" opacity="0.4"/>
-  <!-- CPU grid representation -->
-  <rect x="375" y="88" width="70" height="55" rx="3" fill="none" stroke="#E040FB" stroke-width="1" opacity="0.5"/>
-  <!-- ALU internal grid -->
-  <line x1="375" y1="102" x2="445" y2="102" stroke="#E040FB" stroke-width="0.5" opacity="0.3"/>
-  <line x1="375" y1="116" x2="445" y2="116" stroke="#E040FB" stroke-width="0.5" opacity="0.3"/>
-  <line x1="375" y1="130" x2="445" y2="130" stroke="#E040FB" stroke-width="0.5" opacity="0.3"/>
-  <line x1="399" y1="88" x2="399" y2="143" stroke="#E040FB" stroke-width="0.5" opacity="0.3"/>
-  <line x1="422" y1="88" x2="422" y2="143" stroke="#E040FB" stroke-width="0.5" opacity="0.3"/>
-  <!-- Animated core pulse -->
-  <rect x="380" y="93" width="16" height="10" rx="2" fill="#E040FB" opacity="0.3">
-    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="0.9s" repeatCount="indefinite"/>
-  </rect>
-  <rect x="403" y="108" width="16" height="10" rx="2" fill="#E040FB" opacity="0.5">
-    <animate attributeName="opacity" values="0.5;0.1;0.5" dur="0.7s" repeatCount="indefinite" begin="0.2s"/>
-  </rect>
-  <rect x="426" y="93" width="12" height="10" rx="2" fill="#E040FB" opacity="0.4">
-    <animate attributeName="opacity" values="0.4;0.9;0.4" dur="1.1s" repeatCount="indefinite" begin="0.4s"/>
-  </rect>
-  <rect x="380" y="120" width="20" height="10" rx="2" fill="#E040FB" opacity="0.3">
-    <animate attributeName="opacity" values="0.3;0.7;0.3" dur="0.8s" repeatCount="indefinite" begin="0.1s"/>
-  </rect>
-  <text x="410" y="160" text-anchor="middle" fill="#E040FB" font-size="7.5" font-family="monospace" opacity="0.7">Fetch·Decode</text>
-  <text x="410" y="172" text-anchor="middle" fill="#E040FB" font-size="7.5" font-family="monospace" opacity="0.7">Execute·WB</text>
-  <text x="410" y="184" text-anchor="middle" fill="#E040FB" font-size="7.5" font-family="monospace" opacity="0.5">ISA · Pipeline</text>
-  <text x="410" y="200" text-anchor="middle" fill="#E040FB" font-size="7.5" font-family="monospace" opacity="0.4">Registers · CU</text>
-
-  <!-- Wire 3: CPU → FPGA -->
-  <line x1="465" y1="130" x2="515" y2="130" stroke="#E040FB" stroke-width="2" opacity="0.3"/>
-  <circle cx="465" cy="130" r="4" fill="#E040FB" opacity="0.9" filter="url(#glow-purple)">
-    <animate attributeName="cx" values="465;515;515" dur="2s" repeatCount="indefinite" begin="1.2s"/>
-    <animate attributeName="opacity" values="1;1;0" dur="2s" repeatCount="indefinite" begin="1.2s"/>
-  </circle>
-  <circle cx="465" cy="130" r="4" fill="#E040FB" opacity="0.9" filter="url(#glow-purple)">
-    <animate attributeName="cx" values="465;515;515" dur="2s" repeatCount="indefinite" begin="1.7s"/>
-    <animate attributeName="opacity" values="1;1;0" dur="2s" repeatCount="indefinite" begin="1.7s"/>
-  </circle>
-  <polygon points="513,125 525,130 513,135" fill="#E040FB" opacity="0.7"/>
-
-  <!-- Box 4: FPGA / RTL -->
-  <rect x="515" y="50" width="110" height="160" rx="8" fill="#0A1628" stroke="#00B4D8" stroke-width="1.5" filter="url(#box-glow)">
-    <animate attributeName="stroke-opacity" values="0.6;1;0.6" dur="2.2s" repeatCount="indefinite" begin="1.2s"/>
-  </rect>
-  <text x="570" y="72" text-anchor="middle" fill="#00B4D8" font-size="9" font-family="monospace" font-weight="bold" filter="url(#glow-blue)">💾 FPGA / RTL</text>
-  <line x1="535" y1="80" x2="605" y2="80" stroke="#00B4D8" stroke-width="0.5" opacity="0.4"/>
-  <!-- LUT array representation -->
-  <g opacity="0.8">
-    <rect x="540" y="90" width="13" height="13" rx="2" fill="none" stroke="#00B4D8" stroke-width="1">
-      <animate attributeName="fill-opacity" values="0;0.4;0" dur="1.4s" repeatCount="indefinite" begin="0s"/>
-      <animate attributeName="fill" values="#00B4D8;#00B4D8;#00B4D8" dur="1.4s" repeatCount="indefinite"/>
-    </rect>
-    <rect x="558" y="90" width="13" height="13" rx="2" fill="none" stroke="#00B4D8" stroke-width="1">
-      <animate attributeName="fill-opacity" values="0;0.4;0" dur="1.4s" repeatCount="indefinite" begin="0.2s"/>
-      <animate attributeName="fill" values="#00B4D8;#00B4D8;#00B4D8" dur="1.4s" repeatCount="indefinite"/>
-    </rect>
-    <rect x="576" y="90" width="13" height="13" rx="2" fill="none" stroke="#00B4D8" stroke-width="1">
-      <animate attributeName="fill-opacity" values="0;0.4;0" dur="1.4s" repeatCount="indefinite" begin="0.4s"/>
-      <animate attributeName="fill" values="#00B4D8;#00B4D8;#00B4D8" dur="1.4s" repeatCount="indefinite"/>
-    </rect>
-    <rect x="594" y="90" width="13" height="13" rx="2" fill="none" stroke="#00B4D8" stroke-width="1">
-      <animate attributeName="fill-opacity" values="0;0.4;0" dur="1.4s" repeatCount="indefinite" begin="0.6s"/>
-      <animate attributeName="fill" values="#00B4D8;#00B4D8;#00B4D8" dur="1.4s" repeatCount="indefinite"/>
-    </rect>
-    <rect x="540" y="108" width="13" height="13" rx="2" fill="none" stroke="#00B4D8" stroke-width="1">
-      <animate attributeName="fill-opacity" values="0;0.4;0" dur="1.4s" repeatCount="indefinite" begin="0.8s"/>
-      <animate attributeName="fill" values="#00B4D8;#00B4D8;#00B4D8" dur="1.4s" repeatCount="indefinite"/>
-    </rect>
-    <rect x="558" y="108" width="13" height="13" rx="2" fill="none" stroke="#00B4D8" stroke-width="1">
-      <animate attributeName="fill-opacity" values="0;0.4;0" dur="1.4s" repeatCount="indefinite" begin="1s"/>
-      <animate attributeName="fill" values="#00B4D8;#00B4D8;#00B4D8" dur="1.4s" repeatCount="indefinite"/>
-    </rect>
-    <rect x="576" y="108" width="13" height="13" rx="2" fill="none" stroke="#00B4D8" stroke-width="1">
-      <animate attributeName="fill-opacity" values="0;0.4;0" dur="1.4s" repeatCount="indefinite" begin="1.2s"/>
-      <animate attributeName="fill" values="#00B4D8;#00B4D8;#00B4D8" dur="1.4s" repeatCount="indefinite"/>
-    </rect>
-    <rect x="594" y="108" width="13" height="13" rx="2" fill="none" stroke="#00B4D8" stroke-width="1">
-      <animate attributeName="fill-opacity" values="0;0.4;0" dur="1.4s" repeatCount="indefinite" begin="1.4s"/>
-      <animate attributeName="fill" values="#00B4D8;#00B4D8;#00B4D8" dur="1.4s" repeatCount="indefinite"/>
-    </rect>
-    <rect x="540" y="126" width="13" height="13" rx="2" fill="none" stroke="#00B4D8" stroke-width="1">
-      <animate attributeName="fill-opacity" values="0;0.4;0" dur="1.4s" repeatCount="indefinite" begin="0.3s"/>
-      <animate attributeName="fill" values="#00B4D8;#00B4D8;#00B4D8" dur="1.4s" repeatCount="indefinite"/>
-    </rect>
-    <rect x="558" y="126" width="13" height="13" rx="2" fill="none" stroke="#00B4D8" stroke-width="1">
-      <animate attributeName="fill-opacity" values="0;0.4;0" dur="1.4s" repeatCount="indefinite" begin="0.7s"/>
-      <animate attributeName="fill" values="#00B4D8;#00B4D8;#00B4D8" dur="1.4s" repeatCount="indefinite"/>
-    </rect>
-    <rect x="576" y="126" width="13" height="13" rx="2" fill="none" stroke="#00B4D8" stroke-width="1">
-      <animate attributeName="fill-opacity" values="0;0.4;0" dur="1.4s" repeatCount="indefinite" begin="1.1s"/>
-      <animate attributeName="fill" values="#00B4D8;#00B4D8;#00B4D8" dur="1.4s" repeatCount="indefinite"/>
-    </rect>
-    <rect x="594" y="126" width="13" height="13" rx="2" fill="none" stroke="#00B4D8" stroke-width="1">
-      <animate attributeName="fill-opacity" values="0;0.4;0" dur="1.4s" repeatCount="indefinite" begin="0.9s"/>
-      <animate attributeName="fill" values="#00B4D8;#00B4D8;#00B4D8" dur="1.4s" repeatCount="indefinite"/>
-    </rect>
-  </g>
-  <text x="570" y="158" text-anchor="middle" fill="#00B4D8" font-size="7.5" font-family="monospace" opacity="0.7">Synthesis · P&amp;R</text>
-  <text x="570" y="170" text-anchor="middle" fill="#00B4D8" font-size="7.5" font-family="monospace" opacity="0.7">Timing Analysis</text>
-  <text x="570" y="182" text-anchor="middle" fill="#00B4D8" font-size="7.5" font-family="monospace" opacity="0.5">LUT · FF · BRAM</text>
-  <text x="570" y="200" text-anchor="middle" fill="#00B4D8" font-size="7.5" font-family="monospace" opacity="0.4">Bitstream</text>
-
-  <!-- Wire 4: FPGA → EDGE AI -->
-  <line x1="625" y1="130" x2="675" y2="130" stroke="#00B4D8" stroke-width="2" opacity="0.3"/>
-  <circle cx="625" cy="130" r="4" fill="#00B4D8" opacity="0.9" filter="url(#glow-blue)">
-    <animate attributeName="cx" values="625;675;675" dur="2s" repeatCount="indefinite" begin="1.8s"/>
-    <animate attributeName="opacity" values="1;1;0" dur="2s" repeatCount="indefinite" begin="1.8s"/>
-  </circle>
-  <circle cx="625" cy="130" r="4" fill="#00B4D8" opacity="0.9" filter="url(#glow-blue)">
-    <animate attributeName="cx" values="625;675;675" dur="2s" repeatCount="indefinite" begin="2.3s"/>
-    <animate attributeName="opacity" values="1;1;0" dur="2s" repeatCount="indefinite" begin="2.3s"/>
-  </circle>
-  <polygon points="673,125 685,130 673,135" fill="#00B4D8" opacity="0.7"/>
-
-  <!-- Box 5: EDGE AI -->
-  <rect x="675" y="50" width="110" height="160" rx="8" fill="#0A1628" stroke="#00FFAA" stroke-width="1.5" filter="url(#box-glow)">
-    <animate attributeName="stroke-opacity" values="0.6;1;0.6" dur="3s" repeatCount="indefinite" begin="1.6s"/>
-  </rect>
-  <!-- Brain/neural glow effect on AI box -->
-  <rect x="675" y="50" width="110" height="160" rx="8" fill="#00FFAA" opacity="0">
-    <animate attributeName="opacity" values="0;0.03;0" dur="3s" repeatCount="indefinite" begin="1.6s"/>
-  </rect>
-  <text x="730" y="72" text-anchor="middle" fill="#00FFAA" font-size="9" font-family="monospace" font-weight="bold" filter="url(#glow-green)">🤖 EDGE AI</text>
-  <line x1="695" y1="80" x2="765" y2="80" stroke="#00FFAA" stroke-width="0.5" opacity="0.4"/>
-  <!-- Neural network nodes -->
-  <!-- Layer 1 -->
-  <circle cx="705" cy="100" r="6" fill="none" stroke="#00FFAA" stroke-width="1.2" opacity="0.8"/>
-  <circle cx="705" cy="120" r="6" fill="none" stroke="#00FFAA" stroke-width="1.2" opacity="0.8"/>
-  <circle cx="705" cy="140" r="6" fill="none" stroke="#00FFAA" stroke-width="1.2" opacity="0.8"/>
-  <!-- Layer 2 -->
-  <circle cx="730" cy="108" r="6" fill="none" stroke="#00FFAA" stroke-width="1.2" opacity="0.8"/>
-  <circle cx="730" cy="128" r="6" fill="none" stroke="#00FFAA" stroke-width="1.2" opacity="0.8"/>
-  <!-- Layer 3 -->
-  <circle cx="755" cy="118" r="7" fill="#00FFAA" opacity="0.15" stroke="#00FFAA" stroke-width="1.5">
-    <animate attributeName="opacity" values="0.15;0.5;0.15" dur="2s" repeatCount="indefinite" begin="2s"/>
-  </circle>
-  <!-- Connections -->
-  <line x1="711" y1="100" x2="724" y2="108" stroke="#00FFAA" stroke-width="0.8" opacity="0.3"/>
-  <line x1="711" y1="100" x2="724" y2="128" stroke="#00FFAA" stroke-width="0.8" opacity="0.3"/>
-  <line x1="711" y1="120" x2="724" y2="108" stroke="#00FFAA" stroke-width="0.8" opacity="0.3"/>
-  <line x1="711" y1="120" x2="724" y2="128" stroke="#00FFAA" stroke-width="0.8" opacity="0.3"/>
-  <line x1="711" y1="140" x2="724" y2="108" stroke="#00FFAA" stroke-width="0.8" opacity="0.3"/>
-  <line x1="711" y1="140" x2="724" y2="128" stroke="#00FFAA" stroke-width="0.8" opacity="0.3"/>
-  <line x1="736" y1="108" x2="748" y2="118" stroke="#00FFAA" stroke-width="0.8" opacity="0.3"/>
-  <line x1="736" y1="128" x2="748" y2="118" stroke="#00FFAA" stroke-width="0.8" opacity="0.3"/>
-  <!-- Animated pulses on neural connections -->
-  <circle r="2.5" fill="#00FFAA" opacity="0.9" filter="url(#glow-green)">
-    <animateMotion dur="1.2s" repeatCount="indefinite" begin="2s" path="M711,100 L724,108"/>
-    <animate attributeName="opacity" values="0;1;0" dur="1.2s" repeatCount="indefinite" begin="2s"/>
-  </circle>
-  <circle r="2.5" fill="#00FFAA" opacity="0.9" filter="url(#glow-green)">
-    <animateMotion dur="1.2s" repeatCount="indefinite" begin="2.4s" path="M711,120 L724,128"/>
-    <animate attributeName="opacity" values="0;1;0" dur="1.2s" repeatCount="indefinite" begin="2.4s"/>
-  </circle>
-  <circle r="2.5" fill="#00FFAA" opacity="0.9" filter="url(#glow-green)">
-    <animateMotion dur="0.9s" repeatCount="indefinite" begin="2.8s" path="M736,108 L748,118"/>
-    <animate attributeName="opacity" values="0;1;0" dur="0.9s" repeatCount="indefinite" begin="2.8s"/>
-  </circle>
-  <text x="730" y="158" text-anchor="middle" fill="#00FFAA" font-size="7.5" font-family="monospace" opacity="0.7">TFLite · MCU</text>
-  <text x="730" y="170" text-anchor="middle" fill="#00FFAA" font-size="7.5" font-family="monospace" opacity="0.7">On-device Infer</text>
-  <text x="730" y="182" text-anchor="middle" fill="#00FFAA" font-size="7.5" font-family="monospace" opacity="0.5">Quantization</text>
-  <text x="730" y="200" text-anchor="middle" fill="#00FFAA" font-size="7.5" font-family="monospace" opacity="0.4">Edge Deploy</text>
-
-  <!-- ===== DATA BUS SECTION ===== -->
-  <!-- 32-bit Data Bus (bottom) -->
-  <rect x="45" y="218" width="800" height="8" rx="3" fill="none" stroke="#444" stroke-width="0.5"/>
-  <!-- Animated flowing gradient on data bus -->
-  <rect x="45" y="218" width="100" height="8" rx="3" fill="url(#busGrad)" opacity="0.7">
-    <animate attributeName="x" values="-60;900" dur="2.5s" repeatCount="indefinite"/>
-  </rect>
-  <rect x="45" y="218" width="80" height="8" rx="3" fill="url(#busGrad)" opacity="0.5">
-    <animate attributeName="x" values="-60;900" dur="2.5s" repeatCount="indefinite" begin="1.25s"/>
-  </rect>
-  <text x="450" y="214" text-anchor="middle" fill="#C9D1D9" font-size="8" font-family="monospace" opacity="0.5">◀━━━━━━━━━━━━━━━━━━━  32-BIT DATA BUS  ━━━━━━━━━━━━━━━━━━━▶</text>
-
-  <!-- ===== LABEL AT TOP ===== -->
-  <text x="450" y="15" text-anchor="middle" fill="#C9D1D9" font-size="9" font-family="monospace" opacity="0.4" letter-spacing="3">[ SIGNAL FLOW VISUALIZATION ]</text>
-
-  <!-- ===== BOTTOM LABEL ===== -->
-  <text x="450" y="252" text-anchor="middle" fill="#8B949E" font-size="8" font-family="monospace" opacity="0.7">Transistor  →  Gate  →  CPU  →  FPGA  →  Edge AI</text>
-
-</svg>
-          
-
+<img src="./assets/circuit_animation.svg" width="900" alt="Circuit Signal Flow Animation"/>
 
 </div>
 
@@ -395,8 +39,8 @@
 
 [![Portfolio](https://img.shields.io/badge/🌐_Portfolio-0D1117?style=for-the-badge&logo=vercel&logoColor=00FFAA&labelColor=0D1117)](https://your-portfolio.dev)
 [![Resume](https://img.shields.io/badge/📄_Resume-0D1117?style=for-the-badge&logo=googledrive&logoColor=FF6B35&labelColor=0D1117)](https://your-resume-link.com)
-[![Email](https://img.shields.io/badge/✉️_Email-0D1117?style=for-the-badge&logo=gmail&logoColor=E040FB&labelColor=0D1117)](mailto:abhijith@email.com)
-[![GitHub](https://img.shields.io/badge/⚡_GitHub-0D1117?style=for-the-badge&logo=github&logoColor=00B4D8&labelColor=0D1117)](https://github.com/abhijith)
+[![Email](https://img.shields.io/badge/✉️_Email-0D1117?style=for-the-badge&logo=gmail&logoColor=E040FB&labelColor=0D1117)](mailto:abhijithkumark34@gmail.com)
+[![GitHub](https://img.shields.io/badge/⚡_GitHub-0D1117?style=for-the-badge&logo=github&logoColor=00B4D8&labelColor=0D1117)](https://github.com/abhijithkumark34-cpu)
 
 </div>
 
@@ -438,6 +82,12 @@ const Abhijith = {
     name      : "Hybrid CPU — FPGA + Hardware ALU",
     stack     : ["Verilog", "FPGA", "Custom ALU", "C"],
     goal      : "Full custom CPU implemented on FPGA with hardware arithmetic",
+  },
+
+  contact: {
+    email     : "abhijithkumark34@gmail.com",
+    linkedin  : "https://www.linkedin.com/in/abhijith-kumar-eee",
+    github    : "https://github.com/abhijithkumark34-cpu",
   },
 
   vision      : "Transistors → Logic Gates → CPU → Intelligent Edge Systems",
@@ -584,15 +234,15 @@ const Abhijith = {
 
 <div align="center">
 
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=abhijith&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00FFAA&icon_color=E040FB&text_color=C9D1D9&ring_color=00FFAA" />
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=abhijithkumark34-cpu&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00FFAA&icon_color=E040FB&text_color=C9D1D9&ring_color=00FFAA" />
 &nbsp;&nbsp;
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=abhijith&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00FFAA&text_color=C9D1D9&langs_count=8" />
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=abhijithkumark34-cpu&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00FFAA&text_color=C9D1D9&langs_count=8" />
 
 </div>
 
 <div align="center">
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=abhijith&theme=tokyonight&hide_border=true&background=0D1117&stroke=00FFAA&ring=E040FB&fire=FF6B35&currStreakLabel=00FFAA&sideLabels=C9D1D9&dates=8B949E" />
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=abhijithkumark34-cpu&theme=tokyonight&hide_border=true&background=0D1117&stroke=00FFAA&ring=E040FB&fire=FF6B35&currStreakLabel=00FFAA&sideLabels=C9D1D9&dates=8B949E" />
 
 </div>
 
@@ -682,16 +332,16 @@ APPROACH:  Bottom-up engineering. Understand the electrons before the algorithm.
 
 | Channel | Link |
 |:---:|:---:|
-| ✉️ Email | [abhijith@email.com](mailto:abhijithkumark34@gmail.com) |
-| 💼 LinkedIn | [linkedin.com/in/abhijith](https://www.linkedin.com/in/abhijith-kumar-eee) |
+| ✉️ Email | [abhijithkumark34@gmail.com](mailto:abhijithkumark34@gmail.com) |
+| 💼 LinkedIn | [linkedin.com/in/abhijith-kumar-eee](https://www.linkedin.com/in/abhijith-kumar-eee) |
 | 🌐 Portfolio | [your-portfolio.dev](https://your-portfolio.dev) |
-| ⚡ GitHub | [github.com/abhijith](https://github.com/abhijithkumark34-cpu) |
+| ⚡ GitHub | [github.com/abhijithkumark34-cpu](https://github.com/abhijithkumark34-cpu) |
 
 <br/>
 
-[![Email](https://img.shields.io/badge/Email_Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:abhijith@email.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/abhijith)
-[![Portfolio](https://img.shields.io/badge/Portfolio-0D1117?style=for-the-badge&logo=vercel&logoColor=00FFAA)](https://your-portfolio.dev)
+[![Email](https://img.shields.io/badge/Email_Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:abhijithkumark34@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/abhijith-kumar-eee)
+[![GitHub](https://img.shields.io/badge/GitHub-0D1117?style=for-the-badge&logo=github&logoColor=00B4D8)](https://github.com/abhijithkumark34-cpu)
 
 </div>
 
@@ -699,7 +349,7 @@ APPROACH:  Bottom-up engineering. Understand the electrons before the algorithm.
 
 <div align="center">
 
-<img src="https://komarev.com/ghpvc/?username=abhijith&color=00FFAA&style=for-the-badge&label=PROFILE+VIEWS" />
+<img src="https://komarev.com/ghpvc/?username=abhijithkumark34-cpu&color=00FFAA&style=for-the-badge&label=PROFILE+VIEWS" />
 
 <br/><br/>
 
