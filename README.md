@@ -27,7 +27,7 @@
 
 ### ⚡ Signal Flow Visualization
 
-<img src="./assets/circuit_animation.svg" width="900" alt="Circuit Signal Flow Animation"/>
+<img src="circuit_animation.svg" width="900" alt="Circuit Signal Flow Animation"/>
 
 </div>
 
