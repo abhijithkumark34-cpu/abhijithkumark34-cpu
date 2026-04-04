@@ -32,6 +32,9 @@
 </div>
 
 ---
+<p align="center">
+  <img src="carousel.svg" alt="Project Showcase" width="780"/>
+</p>
 
 <!-- CONNECT BUTTONS -->
 
