@@ -2,130 +2,124 @@
      viewBox="0 0 780 500" width="780" height="500" role="img" aria-label="Project Showcase Carousel">
 
   <defs>
-    <!-- Clip entire card to rounded rect -->
     <clipPath id="card-clip">
       <rect width="780" height="500" rx="18"/>
     </clipPath>
-
-    <!-- Clip images to their display area only -->
     <clipPath id="img-clip">
       <rect x="0" y="48" width="780" height="378"/>
     </clipPath>
-
     <!--
     ═══════════════════════════════════════════════════════════════
-      TIMING  (dur = 15s · 3 slides · 5s each)
+      TIMING  (dur=20s · 4 slides · 5s each)
       Each slide: 0.6s fade-in | 3.8s hold | 0.6s fade-out
 
-      Slide 1: keyTimes="0;0.253;0.293;0.960;1"         values="1;1;0;0;1"
-      Slide 2: keyTimes="0;0.293;0.333;0.587;0.627;1"   values="0;0;1;1;0;0"
-      Slide 3: keyTimes="0;0.627;0.667;0.920;0.960;1"   values="0;0;1;1;0;0"
+      Slide 1: keyTimes="0;0.220;0.250;0.970;1"           values="1;1;0;0;1"
+      Slide 2: keyTimes="0;0.250;0.280;0.470;0.500;1"     values="0;0;1;1;0;0"
+      Slide 3: keyTimes="0;0.500;0.530;0.720;0.750;1"     values="0;0;1;1;0;0"
+      Slide 4: keyTimes="0;0.750;0.780;0.970;1"           values="0;0;1;1;0"
     ═══════════════════════════════════════════════════════════════
     -->
   </defs>
 
-  <!-- ─── CARD BACKGROUND ─────────────────────────────────────── -->
+  <!-- CARD BACKGROUND -->
   <rect width="780" height="500" fill="#0d1117" rx="18"/>
 
-  <!-- ─── ALL CONTENT CLIPPED TO CARD SHAPE ───────────────────── -->
   <g clip-path="url(#card-clip)">
 
-    <!-- ══════════════════════════════════════════════════════════
-         SLIDE 1
-         ══════════════════════════════════════════════════════════ -->
+    <!-- ══ SLIDE 1 ══════════════════════════════════════════════ -->
     <g opacity="1">
       <animate attributeName="opacity"
                values="1;1;0;0;1"
-               keyTimes="0;0.253;0.293;0.960;1"
-               dur="15s" repeatCount="indefinite" calcMode="linear"/>
-
-      <image xlink:href="https://via.placeholder.com/780x378/4361ee/ffffff?text=Project+One"
-                  href="https://via.placeholder.com/780x378/4361ee/ffffff?text=Project+One"
+               keyTimes="0;0.220;0.250;0.970;1"
+               dur="20s" repeatCount="indefinite" calcMode="linear"/>
+      <image
+        xlink:href="https://raw.githubusercontent.com/abhijithkumark34-cpu/abhijithkumark34-cpu/166bdecbc68e890093b2f188ef721dd0d8696f41/Screenshot%202026-03-17%20172538.png"
+             href="https://raw.githubusercontent.com/abhijithkumark34-cpu/abhijithkumark34-cpu/166bdecbc68e890093b2f188ef721dd0d8696f41/Screenshot%202026-03-17%20172538.png"
              x="0" y="48" width="780" height="378"
              preserveAspectRatio="xMidYMid slice"
              clip-path="url(#img-clip)"/>
     </g>
 
-    <!-- ══════════════════════════════════════════════════════════
-         SLIDE 2
-         ══════════════════════════════════════════════════════════ -->
+    <!-- ══ SLIDE 2 ══════════════════════════════════════════════ -->
     <g opacity="0">
       <animate attributeName="opacity"
                values="0;0;1;1;0;0"
-               keyTimes="0;0.293;0.333;0.587;0.627;1"
-               dur="15s" repeatCount="indefinite" calcMode="linear"/>
-
-      <image xlink:href="https://Screenshot 2026-03-18 215908.png/780x378/7209b7/ffffff?text=Project+Two"
-                  href="https://Screenshot 2026-03-18 215908.png/780x378/7209b7/ffffff?text=Project+Two"
+               keyTimes="0;0.250;0.280;0.470;0.500;1"
+               dur="20s" repeatCount="indefinite" calcMode="linear"/>
+      <image
+        xlink:href="https://raw.githubusercontent.com/abhijithkumark34-cpu/abhijithkumark34-cpu/166bdecbc68e890093b2f188ef721dd0d8696f41/Screenshot%202026-03-31%20220535.png"
+             href="https://raw.githubusercontent.com/abhijithkumark34-cpu/abhijithkumark34-cpu/166bdecbc68e890093b2f188ef721dd0d8696f41/Screenshot%202026-03-31%20220535.png"
              x="0" y="48" width="780" height="378"
              preserveAspectRatio="xMidYMid slice"
              clip-path="url(#img-clip)"/>
     </g>
 
-    <!-- ══════════════════════════════════════════════════════════
-         SLIDE 3
-         ══════════════════════════════════════════════════════════ -->
+    <!-- ══ SLIDE 3 ══════════════════════════════════════════════ -->
     <g opacity="0">
       <animate attributeName="opacity"
                values="0;0;1;1;0;0"
-               keyTimes="0;0.627;0.667;0.920;0.960;1"
-               dur="15s" repeatCount="indefinite" calcMode="linear"/>
-
-      <image xlink:href="https://via.placeholder.com/780x378/06d6a0/0a2a1e?text=Project+Three"
-                  href="https://via.placeholder.com/780x378/06d6a0/0a2a1e?text=Project+Three"
+               keyTimes="0;0.500;0.530;0.720;0.750;1"
+               dur="20s" repeatCount="indefinite" calcMode="linear"/>
+      <image
+        xlink:href="https://raw.githubusercontent.com/abhijithkumark34-cpu/abhijithkumark34-cpu/166bdecbc68e890093b2f188ef721dd0d8696f41/Screenshot%202026-04-02%20211725.png"
+             href="https://raw.githubusercontent.com/abhijithkumark34-cpu/abhijithkumark34-cpu/166bdecbc68e890093b2f188ef721dd0d8696f41/Screenshot%202026-04-02%20211725.png"
              x="0" y="48" width="780" height="378"
              preserveAspectRatio="xMidYMid slice"
              clip-path="url(#img-clip)"/>
     </g>
 
-    <!-- ── CHROME BAR (drawn over images so it always shows) ──── -->
+    <!-- ══ SLIDE 4 ══════════════════════════════════════════════ -->
+    <g opacity="0">
+      <animate attributeName="opacity"
+               values="0;0;1;1;0"
+               keyTimes="0;0.750;0.780;0.970;1"
+               dur="20s" repeatCount="indefinite" calcMode="linear"/>
+      <image
+        xlink:href="https://raw.githubusercontent.com/abhijithkumark34-cpu/abhijithkumark34-cpu/fb3e9cd00c3b6f34aee99845f72f3fbe32cc4992/Screenshot%202026-03-18%20215908.png"
+             href="https://raw.githubusercontent.com/abhijithkumark34-cpu/abhijithkumark34-cpu/fb3e9cd00c3b6f34aee99845f72f3fbe32cc4992/Screenshot%202026-03-18%20215908.png"
+             x="0" y="48" width="780" height="378"
+             preserveAspectRatio="xMidYMid slice"
+             clip-path="url(#img-clip)"/>
+    </g>
+
+    <!-- CHROME BAR -->
     <rect width="780" height="48" fill="#161b22"/>
     <line x1="0" y1="48" x2="780" y2="48" stroke="#21262d" stroke-width="1"/>
-
-    <!-- Traffic lights -->
     <circle cx="26" cy="24" r="6.5" fill="#ff5f57"/>
     <circle cx="48" cy="24" r="6.5" fill="#febc2e"/>
     <circle cx="70" cy="24" r="6.5" fill="#28c840"/>
-
-    <!-- URL / address pill -->
     <rect x="96" y="13" width="588" height="22" fill="#0d1117" rx="11"/>
     <text x="390" y="24.5" text-anchor="middle" dominant-baseline="middle"
           fill="#484f58"
           font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,monospace"
-          font-size="11.5" letter-spacing="0.2">
-      github.com/username/projects
-    </text>
+          font-size="11.5" letter-spacing="0.2">github.com/abhijithkumark34-cpu</text>
+    <rect x="696" y="14" width="20" height="20" fill="#21262d" rx="4"/>
+    <text x="706" y="27" text-anchor="middle" fill="#484f58" font-size="12">&#x2665;</text>
+    <rect x="720" y="14" width="20" height="20" fill="#21262d" rx="4"/>
+    <text x="730" y="27" text-anchor="middle" fill="#484f58" font-size="14">&#x22EF;</text>
 
-    <!-- Right-side chrome icons -->
-    <rect x="696" y="14" width="22" height="20" fill="#21262d" rx="5"/>
-    <text x="707" y="28" text-anchor="middle" dominant-baseline="middle" fill="#484f58" font-size="13">&#x2665;</text>
-    <rect x="722" y="14" width="22" height="20" fill="#21262d" rx="5"/>
-    <text x="733" y="28" text-anchor="middle" dominant-baseline="middle" fill="#484f58" font-size="14">&#x22EF;</text>
-
-    <!-- ── PROGRESS BAR (sweeps full width per slide, resets) ──── -->
-    <rect x="0" y="47" width="0" height="2" fill="#4361ee">
+    <!-- PROGRESS BAR -->
+    <rect x="0" y="47" height="2" fill="#4361ee">
       <animate attributeName="width"
-               values="  0;780;  0;780;  0;780;  0"
-               keyTimes="0;0.253;0.333;0.587;0.627;0.960;1"
-               dur="15s" repeatCount="indefinite" calcMode="linear"/>
+               values="0;780;0;780;0;780;0;780;0"
+               keyTimes="0;0.220;0.280;0.470;0.530;0.720;0.780;0.970;1"
+               dur="20s" repeatCount="indefinite" calcMode="linear"/>
       <animate attributeName="opacity"
-               values="0.85;0.85;0;0.85;0.85;0;0"
-               keyTimes="0;0.253;0.333;0.587;0.627;0.960;1"
-               dur="15s" repeatCount="indefinite" calcMode="linear"/>
+               values="0.85;0.85;0;0.85;0.85;0;0.85;0.85;0"
+               keyTimes="0;0.220;0.280;0.470;0.530;0.720;0.780;0.970;1"
+               dur="20s" repeatCount="indefinite" calcMode="linear"/>
     </rect>
 
-    <!-- ── FOOTER BAR (permanent background) ────────────────────── -->
+    <!-- FOOTER BAR -->
     <rect x="0" y="426" width="780" height="74" fill="#161b22"/>
     <line x1="0" y1="426" x2="780" y2="426" stroke="#21262d" stroke-width="1"/>
 
-    <!-- ── PER-SLIDE TITLE + DESCRIPTION ─────────────────────── -->
-
-    <!-- Slide 1 text -->
+    <!-- SLIDE 1 TEXT -->
     <g opacity="1">
       <animate attributeName="opacity"
                values="1;1;0;0;1"
-               keyTimes="0;0.253;0.293;0.960;1"
-               dur="15s" repeatCount="indefinite" calcMode="linear"/>
+               keyTimes="0;0.220;0.250;0.970;1"
+               dur="20s" repeatCount="indefinite" calcMode="linear"/>
       <text x="390" y="453" text-anchor="middle"
             fill="#e6edf3" font-size="15.5" font-weight="700" letter-spacing="0.3"
             font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif">
@@ -134,16 +128,16 @@
       <text x="390" y="473" text-anchor="middle"
             fill="#6e7681" font-size="12.5" letter-spacing="0.1"
             font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif">
-        A groundbreaking tool that changes how we think about X
+        Replace this with your project description
       </text>
     </g>
 
-    <!-- Slide 2 text -->
+    <!-- SLIDE 2 TEXT -->
     <g opacity="0">
       <animate attributeName="opacity"
                values="0;0;1;1;0;0"
-               keyTimes="0;0.293;0.333;0.587;0.627;1"
-               dur="15s" repeatCount="indefinite" calcMode="linear"/>
+               keyTimes="0;0.250;0.280;0.470;0.500;1"
+               dur="20s" repeatCount="indefinite" calcMode="linear"/>
       <text x="390" y="453" text-anchor="middle"
             fill="#e6edf3" font-size="15.5" font-weight="700" letter-spacing="0.3"
             font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif">
@@ -152,16 +146,16 @@
       <text x="390" y="473" text-anchor="middle"
             fill="#6e7681" font-size="12.5" letter-spacing="0.1"
             font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif">
-        High-performance solution engineered for scale and reliability
+        Replace this with your project description
       </text>
     </g>
 
-    <!-- Slide 3 text -->
+    <!-- SLIDE 3 TEXT -->
     <g opacity="0">
       <animate attributeName="opacity"
                values="0;0;1;1;0;0"
-               keyTimes="0;0.627;0.667;0.920;0.960;1"
-               dur="15s" repeatCount="indefinite" calcMode="linear"/>
+               keyTimes="0;0.500;0.530;0.720;0.750;1"
+               dur="20s" repeatCount="indefinite" calcMode="linear"/>
       <text x="390" y="453" text-anchor="middle"
             fill="#e6edf3" font-size="15.5" font-weight="700" letter-spacing="0.3"
             font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif">
@@ -170,85 +164,61 @@
       <text x="390" y="473" text-anchor="middle"
             fill="#6e7681" font-size="12.5" letter-spacing="0.1"
             font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif">
-        Open-source library adopted by thousands of developers worldwide
+        Replace this with your project description
       </text>
     </g>
 
-    <!-- ── NAVIGATION DOTS ────────────────────────────────────── -->
-    <!--
-      Pill dots: active = wide (#4361ee), inactive = narrow (#2d333b)
-      Centered around x=390, y=490
-    -->
+    <!-- SLIDE 4 TEXT -->
+    <g opacity="0">
+      <animate attributeName="opacity"
+               values="0;0;1;1;0"
+               keyTimes="0;0.750;0.780;0.970;1"
+               dur="20s" repeatCount="indefinite" calcMode="linear"/>
+      <text x="390" y="453" text-anchor="middle"
+            fill="#e6edf3" font-size="15.5" font-weight="700" letter-spacing="0.3"
+            font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif">
+        &#x1F4A1; Project Four
+      </text>
+      <text x="390" y="473" text-anchor="middle"
+            fill="#6e7681" font-size="12.5" letter-spacing="0.1"
+            font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif">
+        Replace this with your project description
+      </text>
+    </g>
 
-    <!-- Dot 1 — starts ACTIVE -->
-    <rect y="486" rx="4" height="8" fill="#4361ee">
-      <animate attributeName="x"
-               values="368;368;383;383;368"
-               keyTimes="0;0.253;0.293;0.960;1"
-               dur="15s" repeatCount="indefinite" calcMode="linear"/>
-      <animate attributeName="width"
-               values="20;20;8;8;20"
-               keyTimes="0;0.253;0.293;0.960;1"
-               dur="15s" repeatCount="indefinite" calcMode="linear"/>
+    <!-- NAV DOTS (4 dots, fixed positions, only fill animates) -->
+    <!-- Dot 1 — active during slide 1 -->
+    <rect x="365" y="486" width="8" height="8" rx="4" fill="#4361ee">
       <animate attributeName="fill"
                values="#4361ee;#4361ee;#2d333b;#2d333b;#4361ee"
-               keyTimes="0;0.253;0.293;0.960;1"
-               dur="15s" repeatCount="indefinite" calcMode="linear"/>
+               keyTimes="0;0.220;0.250;0.970;1"
+               dur="20s" repeatCount="indefinite" calcMode="linear"/>
     </rect>
-
-    <!-- Dot 2 — starts INACTIVE -->
-    <rect y="486" rx="4" height="8" fill="#2d333b">
-      <animate attributeName="x"
-               values="395;395;383;383;395;395"
-               keyTimes="0;0.293;0.333;0.587;0.627;1"
-               dur="15s" repeatCount="indefinite" calcMode="linear"/>
-      <animate attributeName="width"
-               values="8;8;20;20;8;8"
-               keyTimes="0;0.293;0.333;0.587;0.627;1"
-               dur="15s" repeatCount="indefinite" calcMode="linear"/>
+    <!-- Dot 2 — active during slide 2 -->
+    <rect x="379" y="486" width="8" height="8" rx="4" fill="#2d333b">
       <animate attributeName="fill"
                values="#2d333b;#2d333b;#4361ee;#4361ee;#2d333b;#2d333b"
-               keyTimes="0;0.293;0.333;0.587;0.627;1"
-               dur="15s" repeatCount="indefinite" calcMode="linear"/>
+               keyTimes="0;0.250;0.280;0.470;0.500;1"
+               dur="20s" repeatCount="indefinite" calcMode="linear"/>
     </rect>
-
-    <!-- Dot 3 — starts INACTIVE -->
-    <rect y="486" rx="4" height="8" fill="#2d333b">
-      <animate attributeName="x"
-               values="407;407;383;383;407;407"
-               keyTimes="0;0.627;0.667;0.920;0.960;1"
-               dur="15s" repeatCount="indefinite" calcMode="linear"/>
-      <animate attributeName="width"
-               values="8;8;20;20;8;8"
-               keyTimes="0;0.627;0.667;0.920;0.960;1"
-               dur="15s" repeatCount="indefinite" calcMode="linear"/>
+    <!-- Dot 3 — active during slide 3 -->
+    <rect x="393" y="486" width="8" height="8" rx="4" fill="#2d333b">
       <animate attributeName="fill"
                values="#2d333b;#2d333b;#4361ee;#4361ee;#2d333b;#2d333b"
-               keyTimes="0;0.627;0.667;0.920;0.960;1"
-               dur="15s" repeatCount="indefinite" calcMode="linear"/>
+               keyTimes="0;0.500;0.530;0.720;0.750;1"
+               dur="20s" repeatCount="indefinite" calcMode="linear"/>
+    </rect>
+    <!-- Dot 4 — active during slide 4 -->
+    <rect x="407" y="486" width="8" height="8" rx="4" fill="#2d333b">
+      <animate attributeName="fill"
+               values="#2d333b;#2d333b;#4361ee;#4361ee;#2d333b"
+               keyTimes="0;0.750;0.780;0.970;1"
+               dur="20s" repeatCount="indefinite" calcMode="linear"/>
     </rect>
 
-  </g><!-- /card-clip -->
+  </g>
 
-  <!-- ─── CARD BORDER OVERLAY (on top of everything) ───────────── -->
-  <rect width="780" height="500" fill="none" rx="18"
-        stroke="#30363d" stroke-width="1"/>
-
-  <!--
-  ═══════════════════════════════════════════════════════════════════
-    QUICK CUSTOMISATION GUIDE
-  ───────────────────────────────────────────────────────────────────
-   IMAGES  → replace the 3 href URLs (search "via.placeholder.com")
-             with your own screenshot links, e.g.:
-             href="https://raw.githubusercontent.com/you/repo/main/demo.png"
-
-   TITLES  → edit the <text> blocks labelled "Project One/Two/Three"
-
-   COLOURS → change #4361ee (accent) to your brand colour
-
-   ADD SLIDE → set dur="20s", add a 4th <g> block following the
-               same keyTimes pattern (each slide = 5s ÷ 20s = 0.25)
-  ═══════════════════════════════════════════════════════════════════
-  -->
+  <!-- CARD BORDER OVERLAY -->
+  <rect width="780" height="500" fill="none" rx="18" stroke="#30363d" stroke-width="1"/>
 
 </svg>
