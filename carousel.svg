@@ -55,8 +55,8 @@
                keyTimes="0;0.293;0.333;0.587;0.627;1"
                dur="15s" repeatCount="indefinite" calcMode="linear"/>
 
-      <image xlink:href="https://via.placeholder.com/780x378/7209b7/ffffff?text=Project+Two"
-                  href="https://via.placeholder.com/780x378/7209b7/ffffff?text=Project+Two"
+      <image xlink:href="https://Screenshot 2026-03-18 215908.png/780x378/7209b7/ffffff?text=Project+Two"
+                  href="https://Screenshot 2026-03-18 215908.png/780x378/7209b7/ffffff?text=Project+Two"
              x="0" y="48" width="780" height="378"
              preserveAspectRatio="xMidYMid slice"
              clip-path="url(#img-clip)"/>
