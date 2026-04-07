@@ -2,7 +2,7 @@
 
 <!-- HERO SECTION -->
 
-# ABHIJITH KUMAR
+# ABHIJITH KUMAR 
 
 <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=22&duration=3000&pause=800&color=00FFAA&center=true&vCenter=true&multiline=false&width=700&lines=Bridging+Software+%E2%86%94+Hardware;Digital+%7C+Analog+%7C+FPGA+%7C+Edge+AI;Building+CPUs+from+Transistors+to+Logic;RTL+Design+%7C+Systems+Engineer+%7C+Circuit+Architect" alt="Typing SVG" /></a>
 
