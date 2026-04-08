@@ -1,6 +1,6 @@
 <div align="center">
 
-<!-- HERO SECTION -->
+<!-- HERO SECTION --> 
 
 # ABHIJITH KUMAR 
 
