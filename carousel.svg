@@ -3,7 +3,7 @@
 
   <defs>
     <clipPath id="card-clip">
-      <rect width="780" height="500" rx="18"/>
+      <rect width="780" height="500" rx="18"/>  
     </clipPath>
     <clipPath id="img-clip">
       <rect x="0" y="48" width="780" height="378"/>
